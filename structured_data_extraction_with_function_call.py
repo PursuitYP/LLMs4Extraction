@@ -98,7 +98,7 @@ def get_completion_function_call(prompt, attribute_set_string):
 
     for i in range(3):  # Retry the API call up to 3 times
         try:
-            messages = [{"role": "system", "content": "Use AttrDict to parse this data."}, 
+            messages = [{"role": "system", "content": "Use AttributeDict to parse this data."}, 
                         {"role": "user", "content": prompt}]
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo-0613",
@@ -230,7 +230,7 @@ if __name__ == '__main__':
     os.environ['OPENAI_API_KEY'] = openai.api_key
 
     # 用户上传pdf，输入需要抽取的属性列表
-    pdf_path = "data/radiolarian/684.pdf"
+    pdf_path = "data/radiolarian/361.pdf"
     field_list = ["section name", "location of the samples and sections", "GPS location", 
                   "associated fossils", "lithology", "number of species and genera found"]
 
