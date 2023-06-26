@@ -1,0 +1,199 @@
+) in 1970, also in E. coli. DNA polymerase III was discovered by a team led by John K. Ostrand-Rosenberg in 1971, also in E. coli. These three DNA polymerases are the main replicative polymerases in prokaryotes. Eukaryotes have multiple DNA polymerases, with the main replicative polymerase being DNA polymerase δ.
+每十亿个碱基对中会有一个错误被复制。纠错是一些DNA聚合酶的特性，而不是所有的。这个过程可以纠正新合成的DNA中的错误。当识别到一个不正确的碱基对时，DNA聚合酶会向后移动一个碱基对。酶的3'-5'外
+) that can synthesize DNA from an RNA template. 
+
+DNA可以被视为生命的基础，因为它携带了所有生物体的遗传信息。DNA聚合酶是一种酶，它能够将新的DNA链合成已存在的DNA链上。DNA聚合酶需要一个称为“夹子”的蛋白
+蛋白质类别中的滑动卡环装载蛋白质打开滑动DNA卡环的环状结构，使其能够与DNA链结合和释放。与卡环的蛋白质-蛋白质相互作用防止DNA聚合酶从DNA模板扩散，
+7) PDBsum（https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/enzymes/GetPage.pl?ec_number=2.7.7.7）基因本体AmiGO（http://amigo.geneontology.org/amigo/term/GO:0034061）/ QuickGO（https://www.ebi.ac.uk/QuickGO/term/GO:0034061）
+酶的作用是从脱氧核苷酸合成DNA，这是DNA的构建块。DNA的复制是通过将核苷酸与原始DNA分子上的碱基配对来创建的。这种配对总是以特定的组合发生，胞嘧啶与鸟嘌呤配对，胸
+只能通过延伸现有核苷酸链的3'端来合成DNA。因此，DNA聚合酶沿着模板链以3'-5'方向移动，而子链以5'-3'方向形成。这种差异使得形成的双链DNA由两条互补的DNA链组成。DNA聚合酶的
+聚合酶仍然能够检测和区分它们，以保持DNA复制的准确性。[12] DNA聚合也对许多突变过程至关重要，并广泛应用于生物技术中。已知的DNA聚合酶具有高度保守的结构，这意味着它们的
+聚合酶是一种酶，它在DNA复制中起着关键作用。它能够将单链DNA模板上的核苷酸与游离的脱氧核苷酸三磷酸酯（dNTPs）配对，并在模板上形成新的双链DNA。DNA聚合
+形状可描述为类似于带有拇指、手指和手掌区域的右手。手掌区域似乎在催化磷酸化转移反应中发挥作用。当酶处于活性状态时，DNA与手掌结合。这种反应被认为是通过双金属离子机
+该文本的中文翻译如下：
+
+该文本是关于1970年托马斯·库恩和马尔科姆·格夫特在阐明大肠杆菌DNA复制中Pol I的作用时发现的三种DNA聚合酶的历史。[8]此外，还提供了有关KEGG条目（
+SUPFAM（http://supfam.org/SUPERFAMILY/cgi-bin/search.cgi?search_field=1dpi）DNA聚合酶沿着DNA模板滑动的能力可以增加过程性。在复制叉处，过程性显著增加。这种增加是通过DNA聚合酶与称为滑动DNA夹的蛋白质
+个人资料（http://priam.prabi.fr/cgi-bin/PRIAM_profiles_CurrentRelease.pl?EC=2.7.7.7）PDB结构RCSB PDB（https://www.rcsb.org/search?q=rcsb_polymer_entity.rcsb_ec_lineage.id:2.7.7.7）PDBe（https://www.ebi.ac.uk/pdbe/entry/search/index?ec_number:2.7.7）
+由于DNA聚合酶结合口袋的形状，嘌呤和小沟内的残基之间发生了立体位阻，嘧啶失去了重要的范德华和静电相互作用。[11] 嘧啶：嘧啶和嘌呤：嘌呤错配引起
+在合成新的DNA时，DNA聚合酶只能将游离核苷酸添加到新形成链的3'端。这导致新形成链以5'-3'方向延伸。需要注意的是，新形成链（子链）的方向性与DNA聚合酶沿模板链移动的方向相反。由于DNA
+37°C下，速率为每秒749个核苷酸。[15] 结构过程性DNA聚合酶家族A：在聚合酶-2碱基对位置上的c:o6-甲基鸟嘌呤对。标识符为DNA_pol_A，Pfam为PF00476（https://www.ebi.ac.uk/interpro/entry/p
+基因组的复制和复制可以继续向前进行。这保持了传递给子细胞的原始DNA链的完整性。在DNA复制中，保真度非常重要。DNA碱基配对不匹配可能导致功能失调的蛋白质，并可能导致癌症。许多DNA聚合
+酶
+
+ExPASy NiceZyme视图（https://enzyme.expasy.org/EC/2.7.7.7）DNA聚合酶是一类酶家族的成员，它们催化从核苷酸三磷酸盐（DNA的分子前体）合成DNA分子。这些酶对于DNA复制至关重要
+于聚合酶和外切酶结构域之间的转换，DNA聚合过程中错误核苷酸的插入会导致DNA聚合的延迟。这种延迟给了DNA从聚合酶位点转移到外切酶位点的时间。不同的错配会导致不同的构
+-2（http://www.commonchemistry.org/ChemicalDetail.aspx?ref=9012-90-2&title=）数据库IntEnz IntEnz视图（https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.7.7.7）BRENDA BRENDA条目（https://www.brenda-enzymes.org/enzyme.php?ecno=2.7.7.7）
+0 194/) InterPro IPR006134（https://www.ebi.ac.uk/interpro/entry/IPR006134）PROSITE PDOC00107（https://prosite.expasy.org/PDOC00107）SCOP2 1noy（http://scop2.mrc-lmb.cam.ac.uk/search?t=txt;q=1noy）/ SCOPe（https://scop.berkeley.edu/pdb/code=）
+DNA定向DNA聚合酶3D结构：基于PDB文件7ICG（http://www.rcsb.org/pdb/explore.do?structureId=7ICG），人类DNA聚合酶β中DNA结合螺旋转折螺旋基序的结构。酶号EC 2.7.7.7（https://www.enzyme-database.org/query
+酶是在细胞分裂和DNA复制过程中合成新的DNA链。在E. coli中发现了7.7%的NCBI蛋白质（https://www.ncbi.nlm.nih.gov/protein?term=2.7.7.7%5BEC/RN%20Number%5D），包括DNA聚合酶III（在1970年代发现
+SMART - (http://smart.embl-heidelberg.de/smart/do_annotation.pl?DOMAIN=-) PROSITE PDOC00412 (https://prosite.expasy.org/PDOC00412) SCOP2 1dpi (http://scop2.mrc-lmb.cam.ac.uk/search?t=txt;q=1dpi) / SCOPe (https://scop.berkeley.edu/pdb/code=1dpi) /
+DNA聚合酶是一种酶，它“读取”现有的DNA链，创建两个与现有链匹配的新链。这些酶催化脱氧核苷酸三磷酸+ DNAn ⇌焦磷酸盐+ DNAn+1的化学反应。DNA聚合酶
+要让细胞的DNA复制，以便将原始DNA分子的副本传递给每个子细胞。通过这种方式，遗传信息可以代代相传。在复制之前，一种叫做螺旋酶的酶会将DNA分子从其紧密编织的形式中解开，同时打
+7.7.7%5BEC/RN%20Number%5D%20AND%20pubmed%20pmc%20local%5Bsb%5D) 进行PMC文章搜索。PubMed文章搜索链接为：(https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&term=2.7.7.7%5BEC/RN%20Number%5D%20AND%20pubmed
+它从RNA模板聚合DNA。 物种间的变异。 可用的蛋白质结构：Pfam结构（http://pfam.xfam.or g/family/PF00476?tab=pdbBlo ck）/ ECOD（http://prodata.swm ed.edu/ecod/complete/searc h?kw=PF00476）PDB RCSB PDB（https://www.rcsb.o
+76%20AND%20rcsb_p olymer_entity_annotation.type: Pfam); PDBe (https://www.ebi. ac.uk/pdbe/entry/search/inde x?pfam_accession:PF00476); PDBj (https://pdbj.org/search/p db?other_db_select=PFam&ot her_db_field=PF00476) PDBsum 结构摘要 (https://ww w.ebi.ac.uk/thornton-srv/d
+03175) Pfam家族CL0194（https://www.ebi.ac.uk/interpro/set/pfam/CL0194/）InterPro IPR004868（https://www.ebi.ac.uk/interpro/entry/IPR004868）可用蛋白质结构：Pfam结构（http://pfam.xfam.org/family/PF03175?tab=pdbBlock）/ ECOD（http://pro
+1noy) / SUPFAM (http://supfam.org/SUPERFAMILY/cgi-bin/search.cgi?search_field=1noy) 可用蛋白质结构：Pfam结构（http://pfam.xfam.org/family/PF00136?tab=pdbBlock）/ ECOD（http://prodata.swmed.edu/ecod/complete/search?kw=PF00136）PDB RCSB PDB（
+复制酶和修复酶真核Polβ、Polσ、Polλ、Polμ和末端脱氧核苷酸转移酶，模板可选；5'磷酸酶（仅Polβ）；弱“手”特征。Euryarchaeota PolD（DP1/DP2异源二聚体）[17]
+.cn/search/index?pfam_acce ssion:PF03175)
+
+/ecod/complete/search?kw=PF03175) PDB RCSB PDB (https://www.rcsb.org/search?q=rcsb_polymer_entity_annotation.annotation_id: PF03175%20AND%20rcsb_polymer_entity_annotation.type: Pfam); PDBe (https://www.ebi.ac.uk/pdbe/entry/search/index?pfam_accession:PF03175); PDBj
+模板可以启动合成，但不能单独或准确地启动。全酶可以准确地启动合成。原核家族A聚合酶包括DNA聚合酶I（Pol I）酶，由polA基因编码，在原核生物中普遍存在。这种修复聚合酶参与剪
+细胞在SOS诱导期间将Pol II的数量增加到约200-300。Pol II也被认为是Prokaryotic polymerase Pol I Pol II III的备用酶，因为它可以与全酶蛋白相互作用并具有高水平的过程性。Pol II的主要作用被认为是在复制叉处
+Pol III全酶是以高度连续的速度和性质组装并接管复制的。[21] Taq聚合酶是该家族的一种热稳定酶，缺乏校对能力。[22] DNA聚合酶II是由polB基因编码的B家族聚合酶。Pol II具
+超嗜热古菌噬菌体Pyrococcus furiosus属于B家族，该家族在古菌中被细分为B1、B2、B3三个亚家族，其中B2是一组假酶。Pfu属于B3家族。其他在古菌中发现的PolBs是“Casposons”
+β滑动卡环过程性因子也是成对存在的，每个核心都有一个，以创建一个包围DNA的卡环，从而实现高过程性。[27]第三个组装体是一个由七个亚基（τ2γδδ'χψ）组成的卡环加载器复合物。旧教科书上的“长号
+结构摘要（https://ww w.ebi.ac.uk/thornton-srv/datab ases/cgi-bin/pdbsum/GetPfam Str.pl?pfam_id=PF00136）DNA聚合酶B型，细胞器和病毒phi29 DNA聚合酶，正交晶体形态，ssDNA复合物。标识符符号DNA_pol_B_2
+Pol I、Pol γ、θ和ν具有两个外切酶结构域（3'-5'和5'-3'）B。复制和修复聚合酶。真核和原核Pol II、Pol B、Pol ζ、Pol α、δ和ε具有3'-5'外切酶（校对）；病毒使用蛋白质
+然而，最近的单分子研究证据表明，Pol III和其在枯草杆菌中的对应物PolC在每个RF上的核心酶平均有三个化学计量当量。[28] 细胞内荧光显微镜技术揭示了领先链合成可能不完全连续
+.org/search/pdb?other_db_select=PFam&other_db_field=PF03175) PDBsum结构摘要（https://www.ebi.ac.uk/thornton-srv/databases/cgi-bin/pdbsum/GetPfamStr.pl?pfam_id=PF03175）家族[16] DNA聚合酶的类型 税种 示例 特征 A 复制和修复聚合酶
+Y复制和修复聚合酶真核和原核Pol ι，Pol κ，Pol η，[18] Pol IV和Pol V跨损伤合成[19] RT复制和修复聚合酶病毒，逆转录病毒和真核端粒酶，乙型肝炎病毒RNA依
+Pol I是最丰富的聚合酶，在大肠杆菌中占聚合酶活性的>95％; 然而，发现缺乏Pol I的细胞，表明Pol I活性可以被其他四种聚合酶替代。Pol I每秒添加约15-20个核苷酸，因此
+当浓度不足时，DnaB螺旋酶与复制叉稳定结合，但过量时会发生周转。[29]另一项单分子研究表明，DnaB螺旋酶活性和链延伸可以以解耦的随机动力学进行。[29]在大肠
+在复制叉处由停滞的聚合酶引起的SOS诱导可以开启。在SOS诱导期间，Pol IV的产生增加了十倍，其中一个功能是干扰Pol III全酶复合物的过程性。这创造了一个检查点，停止了复制，并允许时间通过适当的修复
+。[26] DNA聚合酶III全酶是大肠杆菌DNA复制中主要参与的酶，属于C家族聚合酶。它由三个组件组成：pol III核心、β滑动夹持进程因子和夹持装载复合物。核心由三个亚基组成：α，
+A失去了抑制umuDC操纵子转录的能力。同样的RecA-ssDNA核蛋白后翻译修饰UmuD蛋白成为UmuD'蛋白。UmuD和UmuD'形成异二聚体，与UmuC相互作用，进而激活UmuC对
+基于两种聚合酶的突变签名差异，显示了pol IV和pol V竞争修复单链交联的TLS。[35] 1998年，在嗜热菌Pyrococcus furiosus和Methanococcus jannaschii中发现了DNA聚合酶家族D。[37] PolD复合物是由两个
+在活跃的复制叉中，DnaB解旋酶的复制叉周转速率约为15分钟，ß2滑动卡环为47秒，Pol III*为10秒。这表明DnaB解旋酶可能会稳定地与复制叉相关联，并作为能力齐全的全酶的核化点。体外单
+细胞和古菌的PolD结构，以及Polα的结构。PolD和Polα不仅拥有相似的拓扑结构，而且它们的C-末端还共享一个双功能的引物酶和PCNA结合PIP-box序列，类似于真核细胞。缺乏dinB基因的
+已经提出了在停滞的复制叉中，Pol IV与β-夹具同时结合的情况，其中两种聚合酶同时结合的情况已经被提出。[35]然而，在大肠杆菌中尚未显示出多个TLS聚合酶连续工作以绕过损伤的参与。
+大催化剂）。与其他DNA聚合酶不同，DP2催化核心的结构和机制类似于多亚基RNA聚合酶。DP1-DP2界面类似于真核生物B类聚合酶锌指和其小亚基。[17] DP1，一种Mre11样外切酶，
+最后普遍细胞祖先（LUCA）的DNA聚合酶属于D家族[41]。X家族聚合酶包括众所周知的真核聚合酶pol β（beta），以及其他真核聚合酶，如Pol σ（sigma），Pol λ（lambda），Pol μ（mu）和末端
+酶的进化起源于此。[25] 其N末端的HSH结构域与AAA蛋白质（特别是Pol III亚单位δ和RuvB）相似。[39] DP2具有II类KH结构域。[17] 深海热泉菌polD比Taq聚合酶更加热
+/cgi-bin/pdbsum/GetPfam Str.pl?pfam_id=PF00476) DNA聚合酶B家族rb69 gp43晶体结构与含有胸腺嘧啶醇的DNA复合物的结构标识符 符号DNA_pol_B Pfam PF00136 (https://www.ebi.ac.uk/interpro/entry/pfam/PF00136)
+.rcsb.org/search?q=rcsb_polymer_entity_annotation.annotation_id: PF00136%20AND%20rcsb_polymer_entity_annotation.type: Pfam); PDBe (https://www.ebi.ac.uk/pdbe/entry/search/index?pfam_accession:PF00136); PDBj (https://pdbj.org/search/pdb?other_db_select=PFam&other_db_field=PF00136) PDBsum
+碱基以及缺失位点。Pol λ和Pol μ，分别由POLL和POLM基因编码，参与非同源末端连接，这是一种家族D真核DNA聚合酶β、λ、σ、μ（beta，lambda，sigma，mu）和TdT重新连接由过氧化氢和电离辐射引起的DNA双链断
+“n个核苷酸”指的是在V(D)J重组过程中形成的双链断裂，以促进免疫多样性。[42] Pol α（α）、Pol δ（δ）和Pol ε（ε）是B家族聚合酶的成员，是与核DNA复制主要有关的聚合酶。Pol α复
+这个案例被归类为Asgard群体中的古菌B3聚合酶。[50] Pol η (eta)、Pol ι (iota)和Pol κ (kappa)是家族Y DNA聚合酶，参与由POLH、POLI和POLK基因编码的DNA修复的转录合成。家族Y的成员具有
+创建与增殖细胞核抗原（PCNA）相互作用的其他亚单位，PCNA是一种DNA夹具，使Pol δ具有过程性。[44] Pol ε由POLE1编码，是催化亚单位，POLE2和POLE3基因。据报道，Pol ε的功能是在复制过程中延伸主链，[45
+小的和大的Primase亚基分别为PRIM1和PRIM2。一旦Primase创建了RNA引物，Pol α开始复制，用大约20个核苷酸延长引物。[43]由于其高过程性，Pol δ从Pol α接管前导链和滞后链合成。[14]:218–219 Pol δ由POLD1基因表达
+损伤合成聚合酶与Rev1一起通过停滞的复制DNA聚合酶被招募到受损的损伤处。有两种损伤修复途径，研究人员得出结论，选择的途径取决于哪条链包含损伤，即前导链或
+最近的证据表明，Pol δ可能也在复制DNA的主链中发挥作用。Pol ε的C-末端“聚合酶遗迹”区域虽然对聚合酶活性不必要，但被认为对细胞的生命力至关重要。该C-末端区域被认为在进入
+Polα和Polε。[36] DNA聚合酶V（Pol V）是一种Y家族的DNA聚合酶，参与SOS响应和跨损伤合成DNA修复机制。[33]通过umuDC基因转录Pol V的高度调节，仅在细胞中存在损伤的DNA时产生Pol V，从而产
+联合并继续复制。Pol ζ和Rev1不是复制所必需的，但是在酿酒酵母中失去REV3基因会导致对DNA损伤剂的敏感性增加，因为复制聚合酶停滞时会导致复制叉折叠。[52]端粒
+一种带有螺旋酶的复合物[58]。植物使用两种A家族聚合酶来复制线粒体和质体基因组。它们与细菌Pol I更相似，而不是哺乳动物Pol γ[59]。逆转录病毒编码一种名为逆转
+Pol ε具有更大的“手掌”区域，独立于PCNA提供高度的过程性。[48]与其他B家族聚合酶相比，负责校对的DEDD外切酶家族在Pol α中被失活。[25] Pol ε独特之处在于它具有两个锌指结构
+ζ另一个B家族聚合酶，由两个亚基Rev3（催化亚基）和Rev7（MAD2L2）组成，Rev7增强了聚合酶的催化功能，并参与跨损伤合成。Pol ζ缺乏3'到5'外切酶活性，独特之处
+任何导致Pol γ功能受限或无法正常发挥的突变都对mtDNA产生重大影响，是常见的常染色体遗传线粒体疾病的最常见原因。[55] Pol γ包含一个C-末端聚合酶结构域和一个N-末端3'-5'外
+功能性，降解RNA配对端粒酶聚合酶γ、θ和ν（gamma，theta和nu）逆转录酶为DNA。一种逆转录病毒的例子是HIV。[14]逆转录酶通常用于RNA扩增研究。使用RNA模板，PCR可以利用逆转录
+DNA修复。它具有低度特异性，可以在缺失末端和通过添加核苷酸绕过无法识别的位点。它还具有去氧核糖磷酸二酯酶（dRPase）活性和在单链DNA附近显示ATP酶活性的聚合酶结
+序列5'-TTAGGG-3'招募端粒酶。端粒酶像其他DNA聚合酶一样通过延伸3'端来起作用，但与其他DNA聚合酶不同的是，端粒酶不需要模板。TERT亚单位是反转录酶的一个例子，它使用RNA亚
+该蛋白质具有N端和C端结构域，并具有dCMP转移酶能力，可在会阻碍复制聚合酶Pol δ和Pol ε的损伤处添加脱氧胞嘧啶。这些停滞的聚合酶会激活泛素复合物，进而解
+连接区域负责超过三分之一的所有Pol γ相关线粒体疾病。[56]虽然在真核生物中发现了许多由POLQ基因编码的Pol θ同源物，但其功能尚不清楚。C-末端的氨基酸序列是将Pol θ分类为A家族聚合
+事实上，编码DNA聚合酶η基因被称为XPV，因为失去这个基因会导致Xeroderma Pigmentosum Variant疾病。Pol η对于允许准确的跨损伤DNA合成尤为重要，这种损伤是由紫外线辐射引起的。Pol
+经过一生中的多次复制，许多结果被认为与衰老的影响有关。[14]:248–249 Pol γ (gamma)、Pol θ (theta)和Pol ν (nu)是A家族聚合酶。Pol γ由POLG基因编码，长期以来被认为是唯一的线粒体聚合酶。然
+当DNA聚合酶在适宜温度下生长时，观察到其重组频率比野生型噬菌体高出约两倍。[66] 提出了一种假设，即噬菌体DNA聚合酶的突变改变可以在复制过程中刺激模板链切换（复
+扩增RNA的PCR产物。[9]每个HIV逆转录病毒颗粒含有两个RNA基因组，但是，在感染后，每个病毒只生成一个原病毒。[60]感染后，反转录伴随着两个基因组副本之间的模板切换（复制选择
+0021-9258%2818%2964 634-4）。PMID 13802334（https://pubmed.ncbi.nlm.nih.gov/13802334）。2. Falaschi A，Kornberg A（1966年4月）。"Biochemical studies of bacterial sporulation. II. Deoxyribonucleic acid polymerase in spores of Bacillus subtilis"（https://doi.org/10.1016%2FS0021-
+1. Bollum FJ（1960年8月）。《小牛胸腺聚合酶》（https://doi.org/10.1016%2FS0021-9258%2818%2964634-4）。《生物化学杂志》。235（8）：2399-2403。doi：10.1016/S0021-9258（18）64634-4（https
+9258%2818%2996736-0）。生物化学杂志。241（7）：1478-82。doi：10.1016 / S0021-9258（18）96736-0（https://doi.org/10.1016%2FS0021-9258%2818%2996 736-0）。PMID 4957767（https://pubmed.ncbi.nlm.nih.gov/4957767）。
+领域与添加的领域，如小指（LF）、聚合酶相关领域（PAD）或手腕。然而，由于不同的损伤被修复，家族成员之间的活性位点有所不同。家族Y中的聚合酶是低保真度聚合酶，但已被证
+T4 DNA聚合酶 参见参考文献3。Lehman IR，Bessman MJ，Simms ES，Kornberg A（1958年7月）。“脱氧核糖核酸的酶合成。I.大肠杆菌酶的底物制备和部分纯化”（https://doi.org/10.101
+《生物化学杂志》241（9）：2035-41。doi：10.1016/S0021-9258（18）96662-7（https://doi.org/10.1016%2FS0021-9258%2818%2996662-7）。PMID 5946628（https://pubmed.ncbi.nlm.nih.gov/5946628）。7. “1959年诺贝尔生理学
+https://www.nobelprize.org/nobel_prizes/medicine/laureates/1959/。诺贝尔基金会。检索日期：2012年12月1日。8. Tessman I，Kennedy MA（1994年2月）。"DNA polymerase II of Escherichia coli in the bypass of abasic sites in vivo" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1205799)。《
+. 233（1）：163-70。doi：10.1016 / S0021-9258（19）68048-8（https://doi.or g / 10.1016％2FS0021-9258％2819％2968048-8）。PMID 13563462（https://pubmed.ncbi.nlm.nih.gov/13563462）。4. Richardson CC，Schildkraut CL，Aposhian
+doi:10.1093/genetics/136.2.439（https://doi.org/10.1093%2Fgenetics%2F136.2.439）。PMC 1205799（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1205799）。PMID 7908652（https://pubmed.ncbi.nlm.nih.gov/7908652）。9. Lehninger AL，Cox MM，Nelson DL（2013）。Lehninger
+。合成脱氧腺苷酸和脱氧胸腺苷酸聚合物"（https://doi.org/10.1016%2FS0021-9258%2820%29 81345-3）。生物化学杂志。235（11）：3242-9。doi：10.1016/S0021-9258（20）813
+(18)51772-5 (https://doi.org/10.1016%2FS0021-9258%2818%2951 772-5)。PMID 14114848 (https://pubmed.ncbi.nlm.nih.gov/14114848)。5. Schachman HK, Adler J, Radding CM, Lehman IR, Kornberg A (1960年11月)。"脱氧核糖核
+54..763F（https://ui.ads abs.harvard.edu/abs/2002JMolE..54..763F）。CiteSeerX 10.1.1.327.4738（https://citeseerx.ist. psu.edu/viewdoc/summary?doi=10.1.1.327.4738）。doi:10.1007/s00239-001-0078-x（https://d oi.org/10.1007
+的基因组修复。[62][60] 细菌噬菌体（噬菌体）T4编码了一种DNA聚合酶，它以5'到3'的方向催化DNA合成。[63] 噬菌体聚合酶还具有一个外切酶活性，该活性以3'到5'
+贝格A（1964年1月）。《脱氧核糖核酸的酶合成。第十四篇。大肠杆菌的脱氧核糖核酸聚合酶的进一步纯化和性质》（https://doi.org/10.1016%2FS0021-9258%2818%295
+生物化学（第6版）。纽约：W.H. Freeman and Company。ISBN 978-1-4292-3414-6。OCLC 824794893（http s://www.worldcat.org/oclc/824794893）。10. Garrett G（2013）。生物化学。玛丽·芬奇。11. Hunter WN，Brown T，Anand NN，Kennard O（1986）。“
+酶的结构和功能". 自然结构与分子生物学杂志. 16 (9): 979–86. doi:10.1038/nsmb.1663 (https://doi.org/10.1038%2Fnsmb.1663). PMC 3055789 (https://ww w.ncbi.nlm.nih.gov/pmc/articles/PMC3055789). PMID 19718023 (https://pubmed.ncbi.nlm.ni
+"DNA中的碱基对及其对错配修复的影响"。《自然》杂志。320（6062）：552-5。Bibcode：1986Natur.320..552H（https://ui.adsabs.harvard.edu/abs/1986Natur.320..552H）。doi：10.1038/320552a0（https://doi.org/10.1038%2F320552
+Erre P，Sen-Lin T，Laurent J（2002年6月）。《DNA聚合酶家族的演化：细胞和病毒蛋白之间多重基因交换的证据》（https://web.archive.org/web/20200729235931/http://129.175.105.74/labhome/jfilee/article_jf_1.pdf）（PDF）。《分
+9-09-23。17. Raia P，Carroni M，Henry E，Pehau-Arnaudet G，Brûlé S，Béguin P，Henneke G，Lindahl E，Delarue M，Sauguet L（2019年1月）。“DP1-DP2 PolD复合物与DNA结合的结构及其对DNA和RNA聚合酶进化历
+.nih.gov/10364165)。14. Losick R，Watson JD，Baker TA，Bell S，Gann A，Levine MW（2008）。《基因的分子生物学》（第6版）。旧金山：Pearson/Benjamin Cummings。ISBN 978-0-8053-9592-1。15. McCarthy D，Minner C，Bernstein H，Bernstein C（1976年10月）。
+.nih.gov/3960137)。S2CID 4319887 (https://api.semanticscholar.org/CorpusID:4319887)。12. Swan MK，Johnson RE，Prakash L，Prakash S，Aggarwal AK（2009年9月）。"Structural basis of high-fidelity DNA synthesis by yeast DNA polymerase delta" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3055789)。Nature Structural & Molecular
+18. Boehm EM，Powers KT，Kondratick CM，Spies M，Houtman JC，Washington MT（2016年4月）。《The Proliferating Cell Nuclear Antigen (PCNA)-interacting Protein (PIP) Motif of DNA Polymerase η Mediates Its Interaction with the C-terminal Domain of Rev1》（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4861442）。《The Journal of Biological Chemistry》
+《Y家族DNA聚合酶的结构和功能研究及人类DNA聚合酶η的案例研究》（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4018060）。生物化学。53（17）：2793-803。doi：10.1021/bi500019s（https://doi.org/10.1021%2Fbi5000
+291 (16): 8735–44。doi:10.1074/jbc.M115.697938 (https://doi.org/10.1074%2Fjbc.M115.697938)。PMC 4861442 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4861442)。PMID 26903512 (https://pubmed.ncbi.nlm.nih.gov/26903512)。19. 杨伟（2014年5
+0021-9258%2820%2981345-3）。PMID 13747134（https://pubmed.ncbi.nlm.nih.gov/13747134）。6. Zimmerman BK（1966年5月）。"Purification and properties of deoxyribonucleic acid polymerase from Micrococcus lysodeikticus"（https://doi.org/10.1016%2FS0021-9258%281 8%2996662-7
+文章标题：“酰基转移酶：结构多样性和共同机制”（ht tps://doi.org/10.1074%2Fjbc.274.25.17395）。《生物化学杂志》274（25）：17395-8。doi:10.1074/jbc.274.25.17395（https://doi.org/10.1074%2Fjbc.274
+8060）。PMID 24716551（https://pubmed.ncbi.nlm.nih.gov/24716551）。20. Maga G，Hubscher U，Spadari S，Villani G（2010）。DNA聚合酶：发现、特性和在细胞DNA转录中的功能。世界科学出版公司。ISBN 978-981-4299-16-9。21. Choi CH，
+). 22. Chien A, Edgar DB, Trela JM（1976年9月）。《来自极端嗜热菌Thermus aquaticus的脱氧核糖核酸聚合酶》（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC232952）。《细菌学杂志》。127（3）：1550-7。doi
+.gov/pmc/articles/PMC6355029)。PLOS生物学。17（1）：e3000122。doi：10.1371/journal.pbio.3000122（https://doi.org/10.1371%2Fjournal.pbio.3000122）。PMC 6355029（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6355029）。PMID 30657780（https://pubmed.ncbi.nlm.nih.gov/
+酶的研究表明，它们在DNA复制和修复中起着至关重要的作用。在这项研究中，研究人员使用大肠杆菌作为模型生物，研究了DNA聚合酶的功能和机制。他们发现，DNA聚合酶能够
+"Escherichia coli中染色体DNA合成中的保真因子β-滑环蛋白II"（https://doi.org/10.1111%2Fj.1365-2958.2005.04805.x）。分子微生物学。58（1）：61-70。doi：10.1111/j.1365-2958.2005.04805.x（https://doi
+您好，以下是文章的中文翻译：
+
+（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4104785）。PMID 25101062（https://pubmed.ncbi.nlm.nih.gov/25101062）。26. Rohe M，Schrage K，Meinhardt F（1991年12月）。《Current Genetics》。“Morchella conica”的线性质粒pMC3-2与腺
+2Fjbc.270.49.29570）。PMID 7494000（https://pubmed.ncbi.nlm.nih.gov/7494000）。28. Liao Y，Li Y，Schroeder JW，Simmons LA，Biteen JS（2016年12月）。"Single-Molecule DNA Polymerase Dynamics at a Bacterial Replisome in Live Cells"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5192695）。生物
+。2005.04805. x）。PMID 16164549（https://pubmed.ncbi.nlm.nih.gov/16164549）。S2CID 12002486（https://api.semanticscholar.org/CorpusID:12002486）。24. InterPro蛋白质视图：P61875（https://www.ebi.ac.uk/interpro/protein/P61875）25. Makarova KS，Krupovic M，
+1007/BF00334782（https://doi.org/10.1007%2FBF00334782）。 PMID 1782679（https://pubmed.ncbi.nlm.nih.gov/1782679）。 S2CID 35072924（https://api.semanticscholar.org/CorpusID:35072924）。27. Olson MW，Dallmann HG，McHenry CS（1995年12月）。 "大肠杆菌的Dna
+DNA聚合酶III全酶。Chi psi复合物的功能是通过增加tau和gamma对delta.delta'的亲和力，使其处于生理相关范围内（https://doi.org/10.1074%2Fjbc.270.49.29570）。《生物化学杂志》。270（49）：29570-7。doi：10.1074/jbc
+111 (12): 2562–2569。Bibcode:2016BpJ...111.2562L (https://ui.adsabs.harvard.edu/abs/2016BpJ...111.2562L)。doi:10.1016/j.bpj.2016.11.006 (https://doi.org/10.1016%2Fj.bpj.2016.11.006)。PMC 5192695 (https://
+2014年。《古菌中复制DNA聚合酶的进化及其对真核生物复制机制的贡献》（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4104785）。《微生物前沿》。5：354。doi：10.3389/fmicb.2014.00354（https://doi.org/10.3389%2Ffmic
+《分子生物学杂志》106（4）：963-81。doi：10.1016/0022-2836（76）90346-6（https://doi.org/1 0.1016%2F0022-2836%2876%2990346-6）。PMID 789903（https://pubmed.ncbi.nlm.nih.gov/ 789903）。16. Filée J，Fort
+阿木N，古小堀A，牧H，秋山MT（2012）。《大肠杆菌DinB抑制复制叉前进而不显著诱导SOS反应》（https://doi.org/10.1266%2Fggs.87.75）。《基因与遗传系统》。87（2）：75-87。doi：
+1146/annurev.biochem.71.083101.124707（https://doi.org/10.1146%2Fannurev.bioch em.71.083101.124707）。PMID 12045089（https://pubmed.ncbi.nlm.nih.gov/12045089）。S2CID 1979429（https://api.semanticscholar.org/CorpusID:1979429）。31. 森俊彦，中
+2Fggs.87.75）。PMID 22820381（https://pubmed.ncbi.nlm.nih.gov/22820381）。32. Jarosz DF，Godoy VG，Walker GC（2007年4月）。"Proficient and accurate bypass of persistent DNA lesions by DinB DNA polymerases"（https://doi.org/10.4161%2Fcc.6.7.4065）。《细胞周期》。6（7）
+AS...98.8342S（https://ui.adsabs.harvard.edu/abs/2001PNAS...98.8342S）。doi:10.1073/pnas.111036998（https://doi.org/10.1073%2Fpnas.111036998）。PMC 37441（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC37441）。PMID 11459973（https://pubmed.ncbi.nlm.nih.gov/）。
+6/j.sbi.2018.09.006（https://doi.org/10.1016%2Fj.sbi.2018.09.006）。PMID 30292863（https://pubmed.ncbi.nlm.nih.gov/30292863）。30. Goodman MF（2002）。“原核生物和真核生物中的容错修复DNA聚合酶”。《生物化学年度评论》。71：17
+.nlm.nih.gov/pmc/articles/PMC5192695). PMID 28002733 (https://pubmed.ncbi.nlm.nih.gov/28002733)。29. 徐志强，迪克森NE（2018年12月）。"细菌复制体"（https://doi.org/10.1016%2Fj.sbi.2018.09.006）。结构生物学当前观点。53：159
+. doi:10.4161/cc.6.7.4065（https://doi.org/10.4161%2Fcc.6.7.4065）。PMID 17377496（https://pubmed.ncbi.nlm.nih.gov/17377496）。33. Patel M，Jiang Q，Woodgate R，Cox MM，Goodman MF（2010年6月）。"SOS诱导突变的新模型：RecA
+V" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2874081)。生物化学与分子生物学评论。45（3）：171-84。doi：10.3109/10409238.2010.480968（https://doi.org/10.3109%2F10409238.2010.480968）。PMC 2874081（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2874
+1/bi102064z (https://doi.org/10.1021%2Fbi102064z)。PMC 3062377 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3062377)。PMID 21302943 (https://pubmed.ncbi.nlm.nih.gov/21302943)。36. Madru C，Henneke G，Raia P，Hugonneau-Beaufet I，Pehau-Arnaud
+081). PMID 20441441 (https://pubmed.ncbi.nlm.nih.gov/20441441)。34. Sutton MD，Walker GC（2001年7月）。"Managing DNA polymerases: coordinating DNA replication, DNA repair, and DNA recombination" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC37441)。《美国国家科学院院刊》98（15）：8342-9。Bibcode:2001PN
+11459973）。35. Raychaudhury P，Basu AK（2011年3月）。“大肠杆菌中G [8,5-Me] T交联突变的遗传要求：DNA聚合酶IV和V竞争误差易位”（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3062377）。生物化学。50（12）：
+G、England P等（2020年3月）。《与PCNA复合体中D家族DNA聚合酶增强过程性的结构基础》（https://doi.org/10.1038%2Fs41467-020-15392-9）。《自然通讯》。11（1）：1591。doi:10.1038/s41467-020-15392-9（https
+41467-020-15392-9）。PMID 32221299（https://pubmed.ncbi.nlm.nih.gov/32221299）。37. Ishino Y，Komori K，Cann IK，Koga Y（1998年4月）。"A novel DNA polymerase family found in Archaea"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC107154）。《Bacteriology杂志》。180（8）：2232-6
+.1128/JB.180.8.2232-2236.1998（https://doi.org/10.1128%2FJB.180.8.2232-2236.1998）。PMC 107154（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC107154）。PMID 9555910（https://pubmed.ncbi.nlm.nih.gov/9555910）。38. Sauguet L，Raia P，Henne
+"古菌D家族DNA聚合酶小亚基N端结构的解决方案揭示了与真核B家族聚合酶的进化关系"（https://doi.org/10.1016%2Fj.febslet.2010.06.026）。 FEBS Letters. 584（15）：3370-5。 doi：10.1016/j.febs
+.1038/ncomms12227（https://doi.org/10.1038%2Fncomms12227）。PMC 4996933（http s://www.ncbi.nlm.nih.gov/pmc/articles/PMC4996933）。PMID 27548043（https://pubmed.ncbi.nlm.nih.gov/27548043）。39.山崎健、漆畑裕、山崎智、有坂史、松
+柯G，Delarue M（2016）。《X射线晶体学揭示的古菌PolD和多亚基RNA聚合酶之间共享的活性位点结构》（http s://www.ncbi.nlm.nih.gov/pmc/articles/PMC4996933）。自然通讯。7：12227。 Bibcode：2016NatCo...712227S（https://ui.ads
+%2Fs00239-001-0078-x）。PMID 12029358（https://pubmed.ncbi.nlm.nih.gov/12029358）。S2CID 15852365（https://api.semanticscholar.org/CorpusID:15852365）。原始文件存档（http://129.175.105.74/labhome/jfilee/article_jf_1.pdf）（PDF），于2020年07月29日检索。
+“乙酰化转录因子作为基因表达控制机制”（https://doi.org/10.4161%2Fcc.3.2.651）。细胞周期。3（2）：114-5。doi：10.4161/cc.3.2.651（https://doi.org/10.4161%2Fcc.3.2.651）。PMID 14712067（
+.1016/j.febslet.2010.06.026). PMID 20598295 (https://pubmed.ncbi.nlm.nih.gov/20598295). S2CID 11229530 (https://api.semanticscholar.org/CorpusID:11229530). 40. Ishino S, Ishino Y (2014). “DNA聚合酶作为生物技术有用试剂——该领域发
+.nlm.nih.gov/25221550).
+
+//www.ncbi.nlm.nih.gov/pmc/articles/PMC4148896。《微生物前沿》。5: 465。doi:10.3389/fmicb.2014.00465 (https://doi.org/10.3389%2Ffmicb.2014.00465)。PMC 4148896 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4148896)。PM
+.nlm.nih.gov/25221550)。41. Koonin EV，Krupovic M，Ishino S，Ishino Y（2020年6月）。"LUCA的复制机制：DNA复制和转录的共同起源"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7281927）。BMC生物学。18（1）：61。doi：10.1186/s12915-020-
+/10.1186%2Fs12915-020-00800-9)。PMC 7281927 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7281927)。PMID 32517760 (https://pubmed.ncbi.nlm.nih.gov/32517760)。42. Yamtich J，Sweasy JB（2010年5月）。"DNA polymerase family X: function, structure, and cellular roles" (https://www
+Isoz I，Lundström EB，Johansson E，Kunkel TA（2007年7月）。“酵母DNA聚合酶ε参与主链DNA复制”（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2233713）。科学。317（5834）：127-30。 Bibcode：2007Sci... 317..127P（https://ui.adsabs.harvard.edu/
+，Davie EW，So AG，Downey KM（1991年12月）。《人类DNA聚合酶δ催化亚基的主要结构和基因染色体位置》（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC53101）。美国国家科学院院刊。88（24）：11197-201。 Bibcode：1991PNAS ... 8811197C
+/PMC2846199）。PMID 19631767（https://pubmed.ncbi.nlm.nih.gov/19631767）。43. Chansky ML，Marks A，PeetA（2012）。Marks' Basic Medical Biochemistry：a clinical approach（第4版）。费城：Wolter Kluwer Health / Lippincott Williams＆Wilkins。第13章。ISBN 978-1608315727。44. Chung DW，Zhang JA
+vard.edu/abs/1991PNAS...8811197 C)。doi:10.1073/pnas.88.24.11197 (https://doi.org/10.1073%2Fpnas.88.24.11197)。PMC 53101 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC53101)。PMID 1722322 (https://pubmed.ncbi.nlm.nih.gov/1722322)。45. Purs
+P). doi:10.1126/science.1144067 (https://doi.org/10.1126%2Fscience.1144067). PMC 2233713 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2233713). PMID 17615360 (https://pubmed.ncbi.nlm.nih.gov/17615360). 46. Lujan SA, Williams JS, Kunkel TA (2016年9月). "DNA".
+聚合酶分工进行基因组复制。《细胞生物学趋势》。26（9）：640-654。doi：10.1016/j.tcb.2016.04.012（https://doi.org/10.1016%2Fj.tcb.2016.04.012）。PMC 4993630（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC
+PMID 25202305（https://pubmed.ncbi.nlm.nih.gov/25202305）。49. Edwards S，Li CM，Levy DL，Brown J，Snow PM，Campbell JL（2003年4月）。"Saccharomyces cerevisiae DNA polymerase epsilon and polymerase sigma interact physically and functionally, suggesting a role for polymerase epsilon in sister chromatid cohesion"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC152548）。分
+4993630）。PMID 27262731（https://pubmed.ncbi.nlm.nih.gov/27262731）。47. Johnson RE，Klassen R，Prakash L，Prakash S（2015年7月）。"A Major Role of DNA Polymerase δ in Replication of Both the Leading and Lagging DNA Strands"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4517859）。Molecular Cell。59（2）：163-175。
+/pmc/articles/PMC2846199)。生物化学与生物物理学学报（BBA）-蛋白质和蛋白质组学。1804（5）：1136-50。doi：10.1016/j.bbapap.2009.07.008（https://doi.org/10.1016%2Fj.bbapap.2009.07.008）。PMC
+75)。50. Zaremba-Niedzwiedzka K，Caceres EF，Saw JH，Bäckström D，Juzokaite L，Vancaester E，Seitz KW，Anantharaman K，Starnawski P，Kjeldsen KU，Stott MB，Nunoura T，Banfield JF，Schramm A，Baker BJ，Spang A，Ettema TJ
+iri C（2009）。Y家族DNA聚合酶结构化和非结构化区域的分离作用。《蛋白质化学和结构生物学进展》。第78卷。第99-146页。doi：10.1016/S1876-1623（08）78004-0（https://doi.org/10.1016%2FS1876-
+"真核生物DNA复制的分子机制研究进展"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4142720）。《微生物前沿》。5：444。doi：10.3389/fmicb.2014.00444（https://doi.org/10.3389%2Ffmicb.2014.00444）。PMC 4142720（https://www.ncbi.nlm
+2017年，《自然》杂志发表了题为“阿斯加德古菌揭示真核细胞复杂性起源”的论文（https://escholarship.org/uc/item/0qh5400s）。该论文认为，阿斯加德古菌可以揭示真核细胞复杂性的起源。该论文
+doi:10.1016/j.molcel.2015.05.038（https://doi.org/10.1016%2Fj.molcel.2015.05.038）。PMC 4517859（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4517859）。PMID 26145172（https://pubmed.ncbi.nlm.nih.gov/26145172）。48. Doublié S，Zahn KE（2014）。"Struct
+生物学。23（8）：2733-48。doi：10.1128 / mcb.23.8.2733-2748.2003（https://doi.org/10.1128％2Fmcb.23.8.2733-2748.2003）。PMC 152548（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC152548）。PMID 12665575（https://pubmed.ncbi.nlm.nih
+3103052 (http s://www.ncbi.nlm.nih.gov/pmc/articles/PMC3103052)。PMID 20663485 (https://pubmed.ncbi.nlm.nih.gov/20663485)。52. Gan GN，Wittschieben JP，Wittschieben BØ，Wood RD（2008年1月）。"DNA polymerase zeta (pol zeta) in higher eukaryotes"（https://doi.org/10.103
+Fcr.2007.117）。《细胞研究》。18（1）：174-83。doi：10.1038/cr.2007.117（https://doi.org/10.1038%2Fcr.2007.117）。PMID 18157155（https://pubmed.ncbi.nlm.nih.gov/18157155）。53. Bienstock R，Beard W，Wilson S（2014年8月
+"DNA聚合酶X家族成员的结构和功能研究"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4260717）。DNA修复。22：77-88。doi：10.1016/j.dnarep.2014.07.003（https://doi.org/10.1016%2Fj.dnarep.2014.07.003）。PMC 4260717
+2017年10月11日（https://doi.org/10.1016%2Fj.dnarep.2017.10.011）。PMC 5919216（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5919216）。PMID 29100041（https://pubmed.ncbi.nlm.nih.gov/29100041）。55. 张磊，陈思思，沃尔夫DJ（2011年7月
+0717）。PMID 25112931（https://pubmed.ncbi.nlm.nih.gov/25112931）。54. Prasad R等（2017年10月）。"DNA polymerase β：哺乳动物线粒体碱基切除修复机制中的缺失环节"（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5919216）。DNA修复。60：77-88。doi：10
+mc/articles/PMC3158670). PMID 21732785 (https://pubmed.ncbi.nlm.nih.gov/21732785)。56. Stumpf JD，Copeland WC（2011年1月）。"Mitochondrial DNA replication and disease: insights from DNA polymerase γ mutations" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC 3046768)。细胞与分子生命科学。68（2）：219-
+γ功能障碍：从解剖学到分子病理学诊断（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158670）。病理学和实验室医学档案。135（7）：925-34。doi：10.5858/2010-0356-RAR.1（https://doi.org/10.5858%2F2010-0356
+/10.1038%2Fnature21031）。OSTI 1580084（https://www.osti.gov/biblio/1580084）。PMID 28077874（https://pubmed.ncbi.nlm.nih.gov/28077874）。S2CID 4458094（https://api.semanticscholar.org/CorpusID:4458094）。51. Ohmori H，Hanafusa T，Ohashi E，Vaz
+7/s00018-010-0530-4（https://doi.org/10.1007%2Fs00018-010-0530-4）。PMC 3046768（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3046768）。PMID 20927567（https://pubmed.ncbi.nlm.nih.gov/20927567）。57. Hogg M，Sauer-Eriksson AE，Johansson E（2012年3月）。
+). “人类DNA聚合酶θ的混合DNA合成”（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3315306）。核酸研究。40（6）：2611-22。doi：10.1093/nar/gkr1102（https://doi.org/10.1093％2Fnar％2Fgkr1102）。PMC 3315306（https
+/articles/PMC331530 6). PMID 22135286 (https://pubmed.ncbi.nlm.nih.gov/22135286)。58. "UniProtKB - Q7Z5Q5 (DPOLN_HUMAN)" (https://www.uniprot.org/uniprot/Q7Z5Q5)。Uniprot。2018年7月5日检索。59. Cupp JD，Nielsen BL（2014年11月）。"Minire
+在植物线粒体中的“（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC417701）线粒体。19 Pt B：231-7。doi：10.1016 / j.mito.2014.03.008（https://doi.org/10.1016％2Fj.mito.2014.03.008）。PMC 417701（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC
+10 (http s://pubmed.ncbi.nlm.nih.gov/24681310)。60. Rawson JM，Nikolaitchik OA，Keele BF，Pathak VK，Hu WS（2018年11月）。“重组对于高效HIV-1复制和病毒基因组完整性的维持是必需的”（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6237782）。
+doi:10.1093/nar/gky910（https://doi.org/10.1093%2Fnar%2Fgky910）。PMC 6237782（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6237782）。PMID 30307534（https://pubmed.ncbi.nlm.nih.gov/30307534）。61. Cromer D，Grimm AJ，Schlub TE，Mak J，Davenport MP（2016
+"α-亚基DNA聚合酶在链位移方面存在缺陷"（https://doi.org/10.1016%2FS0021-9258%2817%2933149-6）。 《生物化学杂志》。 251（17）：5219-24。 doi：10.1016 / S0021-9258（17）33149-6（https://doi.or
+您好，以下是该文本的中文翻译：
+
+://pubmed.ncbi.nlm.nih.gov/4866523). 64. 黄文明，Lehman IR（1972年5月）。"关于噬菌体T4脱氧核糖核酸聚合酶的外切酶活性"（https://doi.org/10.1016%2
+"估计体内HIV模板切换和重组率"。艾滋病。30（2）：185-92。doi：10.1097 / QAD.0000000000000936（https://doi.org/10.1097％2FQAD.0000000000000936）。PMID 26691546（https://pubmed.ncbi.nlm.nih.gov/26691546）。S2CID
+.org/CorpusID:20086739)。62. 胡维山，特明HM（1990年11月）。《逆转录病毒的重组和逆转录》。《科学》。250（4985）：1227-33。Bibcode：1990Sci... 250.1227H（https://ui.adsabs.harvard.edu/abs/1990Sci...250.1227
+doi.org/10.1126%2Fscience.1700865。PMID 1700865 (https://pubmed.ncbi.nlm.nih.gov/1700865)。63. Goulian M，Lucas ZJ，Kornberg A（1968年2月）。"Enzymatic synthesis of deoxyribonucleic acid. XXV. Purification and properties of deoxyribonucleic acid polymerase induced by infection with phage T4"
+，Christman MF，Copeland WC，Friedberg EC，Hanaoka F，Hinkle DC，Lawrence CW，Nakanishi M，Ohmori H，Prakash L，Prakash S，Reynaud CA，Sugino A，Todo T，Wang Z，Weill JC，Woodgate R（2001年11月）。 “真核DNA聚合酶：修订命名的建议”（https://doi
+6/S0021-9258（19）45224-1（https://doi.org/10.1016%2FS0021-9258%2819%2945224-1）。PMID 4554914（https://pubmed.ncbi.nlm.nih.gov/4554914）。65. Gillin FD，Nossal NG（1976年9月）。"细菌噬菌体T4 DNA聚合酶对
+-6). PMID 956182 (https://pubmed.ncbi.nlm.nih.gov/956182)。66. Bernstein H (1967年8月)。"The effect on recombination of mutational defects in the DNA polymerase and deoxycytidylate hydroxymethylase of phage T4D" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1211652)。Genetics. 56 (4): 755–69. doi
+（https://doi.org/10.1016%2FS0021-9258%2 818%2993650-1）。生物化学杂志。243（3）：627-38。doi：10.1016/S0021-9258（18）93650-1（https://doi.org/10.1016%2FS0021-9258%2818%2993 650-1）。PMID 4866523
+您好，以下是文本的中文翻译：
+
+美国国家医学图书馆医学主题词（MeSH）中的DNA聚合酶（PDB分子月刊https://pdb101.rcsb.org/motm/3）异常修复机制（https://web.archive.org/web/20101204113327/http://researchnews.osu.edu/archive/repprot.htm），
+2Fjbc.R100056200）。《生物化学杂志》（The Journal of Biological Chemistry）276（47）：43487-90。doi：10.1074/jbc.R100056200（https://doi.org/10.1074%2Fjbc.R100056200）。PMID 11579108（https://pubmed.ncbi.nlm.nih.gov/11579108）。DNA聚合酶（https://meshb.nlm
+:10.1093/genetics/56.4.755（https://doi.org/10.1093%2Fgenetics%2F56.4.755）。PMC 1211652（https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1211652）。PMID 6061665（https://pubmed.ncbi.nlm.nih.gov/6061665）。Burgers PM，Koonin EV，Bruford E，Blanco L，Burt
+你好，在视频的1分45秒处（http://wehi.edu.au/education/wehitv/molecular_visualisations_of_dna/）展示了来自EM数据库（EMDB）（http://www.pdbe.org/emsearch/dna\%20polymerase）的DNA聚合酶的3D大分子结构。引用自“https://en.wikipedia.org/w/index.php?title=DNA_polymerase&oldid
