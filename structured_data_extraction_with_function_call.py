@@ -90,7 +90,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     logging.error("Failed to call OpenAI API after multiple retries due to rate limiting.")
     return None  # Return None for failure
 
-# 调用API并使用重试机制处理rate limit error和其他异常
+# 调用API并使用重试机制处理rate limit error和其他异常，调用function call功能
 def get_completion_function_call(prompt, attribute_set_string):
     class AttributeDict(OpenAISchema):
         """Attributes of user input"""
