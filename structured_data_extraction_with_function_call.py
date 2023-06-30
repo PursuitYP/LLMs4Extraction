@@ -223,6 +223,8 @@ PARAGRAPH
 if __name__ == '__main__':
     # 环境初始化，用户上传OpenAI API key
     load_dotenv()
+    # os.environ["http_proxy"] = "http://10.10.1.3:10000"
+    # os.environ["https_proxy"] = "http://10.10.1.3:10000"
     os.environ["http_proxy"] = "http://10.10.10.10:17890"
     os.environ["https_proxy"] = "http://10.10.10.10:17890"
     # Load your API key from an environment variable or secret management service
@@ -230,7 +232,7 @@ if __name__ == '__main__':
     os.environ['OPENAI_API_KEY'] = openai.api_key
 
     # 用户上传pdf，输入需要抽取的属性列表
-    pdf_path = "data/radiolarian/361.pdf"
+    pdf_path = "data/radiolarian/715.pdf"
     field_list = ["section name", "location of the samples and sections", "GPS location", 
                   "associated fossils", "lithology", "number of species and genera found"]
 
