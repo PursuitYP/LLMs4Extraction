@@ -223,10 +223,10 @@ PARAGRAPH
 if __name__ == '__main__':
     # 环境初始化，用户上传OpenAI API key
     load_dotenv()
-    # os.environ["http_proxy"] = "http://10.10.1.3:10000"
-    # os.environ["https_proxy"] = "http://10.10.1.3:10000"
-    os.environ["http_proxy"] = "http://10.10.10.10:17890"
-    os.environ["https_proxy"] = "http://10.10.10.10:17890"
+    os.environ["http_proxy"] = "http://10.10.1.3:10000"
+    os.environ["https_proxy"] = "http://10.10.1.3:10000"
+    # os.environ["http_proxy"] = "http://10.10.10.10:17890"
+    # os.environ["https_proxy"] = "http://10.10.10.10:17890"
     # Load your API key from an environment variable or secret management service
     openai.api_key = os.getenv("OPENAI_API_KEY")
     os.environ['OPENAI_API_KEY'] = openai.api_key
