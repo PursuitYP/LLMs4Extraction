@@ -197,7 +197,9 @@ Document: \"\"\"{document}\"\"\"\n
     # 3. 数据格式转换：根据抽取的关键信息，转换生成JSON样式的结果
     zipped_str = str(zipped)[1:][:-1]
     # 数据格式转换prompt
-    transform_prompt = f'''I'm going to ask for attributes. Use AttributeDict to parse this data."
+    transform_prompt = f'''I'm going to ask for attributes. 
+Use AttributeDict to parse this PARAGRAPH.
+Please give your answer based on all the content of the entire PARAGRAPH.
 ---
 PARAGRAPH
 {zipped_str}
