@@ -349,7 +349,7 @@ with open(rel_file, 'r') as f:
                     relations.append(relation_info)
 
 
-# write_csv_file = "../../projects/openie6/rel_results/rel_pubmed_0508_new1.csv"
+# write_csv_file = "../../projects/openie6/rel_results/rel_pubmed_0508_new.csv"
 write_csv_file = "../../projects/openie6/predictions_new.txt"
 log_file = 'log_mgkg.txt'
 with open(write_csv_file, 'w', newline='') as csvfile:
