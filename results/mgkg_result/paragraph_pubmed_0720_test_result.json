@@ -1,0 +1,575 @@
+[
+    {
+        "paragraph": "Multifocal Central Serous Chorioretinopathy Associated with Steroids in a Patient with Myasthenia Gravis. We present a case of bilateral multifocal central serous chorioretinopathy in a 40-year-old male who suffered from myasthenia gravis and was receiving oral prednisolone. Due to the severity of the underlying disease it was not possible to reduce the corticosteroid dose. After initial unsuccessful treatment with an intravitreal injection of ranibizumab low-fluence photodynamic therapy was performed followed by gradual tapering of the corticosteroids. Visual acuity improved significantly in both eyes. Different therapeutic approaches are. Eleni Vourda University Eye Clinic of Ioannina Stavros Niarchos Ave. GR45500 Ioannina Greece E-Mail elvourdahotmail.comWe present a case of bilateral multifocal central serous chorioretinopathy in a 40-year-oldmale who suffered from myasthenia gravis and was receiving oral prednisolone. Due to theseverity of the underlying disease it was not possible to reduce the corticosteroid dose. Afterinitial unsuccessful treatment with an intravitreal injection of ranibizumab low-fluencephotodynamic therapy was performed followed by gradual tapering of the corticosteroids.Visual acuity improved significantly in both eyes.\n",
+        "relations": [
+            {
+                "head": "Multifocal Central Serous Chorioretinopathy",
+                "head_label": "disease",
+                "relation": "associated with",
+                "tail": "Steroids",
+                "tail_label": "medication"
+            },
+            {
+                "head": "Multifocal Central Serous Chorioretinopathy",
+                "head_label": "disease",
+                "relation": "treatment",
+                "tail": "intravitreal injection of ranibizumab",
+                "tail_label": "medication"
+            },
+            {
+                "head": "Multifocal Central Serous Chorioretinopathy",
+                "head_label": "disease",
+                "relation": "treatment",
+                "tail": "low-fluence photodynamic therapy",
+                "tail_label": "non-medication treatment"
+            },
+            {
+                "head": "Steroids",
+                "head_label": "medication",
+                "relation": "adverse effect",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "Myasthenia Gravis",
+                "head_label": "disease",
+                "relation": "associated with",
+                "tail": "Steroids",
+                "tail_label": "medication"
+            },
+            {
+                "head": "Myasthenia Gravis",
+                "head_label": "disease",
+                "relation": "treatment",
+                "tail": "oral prednisolone",
+                "tail_label": "medication"
+            },
+            {
+                "head": "oral prednisolone",
+                "head_label": "medication",
+                "relation": "treatment",
+                "tail": "Myasthenia Gravis",
+                "tail_label": "disease"
+            },
+            {
+                "head": "corticosteroid",
+                "head_label": "medication",
+                "relation": "complication",
+                "tail": "Myasthenia Gravis",
+                "tail_label": "disease"
+            },
+            {
+                "head": "intravitreal injection",
+                "head_label": "non-medication treatment",
+                "relation": "treatment",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "ranibizumab",
+                "head_label": "medication",
+                "relation": "treatment",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "low-fluence photodynamic therapy",
+                "head_label": "non-medication treatment",
+                "relation": "treatment",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "visual acuity",
+                "head_label": "clinical feature",
+                "relation": "improved by",
+                "tail": "treatment",
+                "tail_label": ""
+            },
+            {
+                "head": "eyes",
+                "head_label": "clinical feature",
+                "relation": "affected by",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
+                "tail_label": "disease"
+            }
+        ]
+    },
+    {
+        "paragraph": "Introduction. Central serous chorioretinopathy CSCR is a condition characterized by the accumulation of subretinal fluid at the posterior pole of the fundus causing single or multiple areas of serous retinal detachment. The pathophysiology of the disease is thought to involve retinal pigment epithelial RPE dysfunction increased leakage of choriocapillaris vessels and Bruchs membrane dysfunction 1 2. The result of localized exudation is the formation of retinal edema and small RPE detachments at the macular and perimacular areas. Although the aetiology and triggering factors of CSCR are not clearly understood the condition is commonly associated with the use of systemic or topical steroids 2 3. Consequently a critical therapeutic step is the withdrawal of any steroids the patient might be using.Case Rep Ophthalmol 2013416DOI 10.1159/000351856 2013 S. Karger AG Basel www.karger.com/copStefaniotou et al. Multifocal Central Serous Chorioretinopathy Associated with Steroids in a Patient with Myasthenia Gravis2Unfortunately when steroids are indispensable for the treatment of a patients systemic disease the management of CSCR becomes challenging. Here we report our experience in such a clinical setting. Case Report.\n",
+        "relations": [
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "systemic or topical steroids",
+                "tail_label": "medication"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "be characterized by",
+                "tail": "accumulation of subretinal fluid",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "be characterized by",
+                "tail": "serous retinal detachment",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "involve",
+                "tail": "retinal pigment epithelial dysfunction",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "involve",
+                "tail": "increased leakage of choriocapillaris vessels",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "involve",
+                "tail": "Bruchs membrane dysfunction",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "result in",
+                "tail": "formation of retinal edema",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "result in",
+                "tail": "formation of small RPE detachments",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "macular and perimacular areas",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "aetiology",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "triggering factors",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Central serous chorioretinopathy",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "withdrawal of steroids",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Steroids",
+                "head_label": "medication",
+                "relation": "be associated with",
+                "tail": "Central serous chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "Steroids",
+                "head_label": "medication",
+                "relation": "be associated with",
+                "tail": "multifocal Central serous chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "Steroids",
+                "head_label": "medication",
+                "relation": "be associated with",
+                "tail": "Myasthenia Gravis",
+                "tail_label": "disease"
+            },
+            {
+                "head": "Steroids",
+                "head_label": "medication",
+                "relation": "be used for",
+                "tail": "treatment of systemic disease",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Steroids",
+                "head_label": "medication",
+                "relation": "be used for",
+                "tail": "management of CSCR",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Steroids",
+                "head_label": "medication",
+                "relation": "be used for",
+                "tail": "treatment of Myasthenia Gravis",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Myasthenia Gravis",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "Steroids",
+                "tail_label": "medication"
+            },
+            {
+                "head": "Myasthenia Gravis",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "multifocal Central serous chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "Myasthenia Gravis",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "treatment of CSCR",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Myasthenia Gravis",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "treatment of systemic disease",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Myasthenia Gravis",
+                "head_label": "disease",
+                "relation": "be associated with",
+                "tail": "management of CSCR",
+                "tail_label": "clinical feature"
+            }
+        ]
+    },
+    {
+        "paragraph": "He had a history of myasthenia gravis for which he had been treated with oral prednisolone and azathioprine during the last 2 years. His bestcorrected visual acuity BCVA was 8/10 in the right eye OD and 9/10 in the left eye OS.Fundoscopy revealed a few small yellow-whitish circumscribed macular elevations and one larger irregularly shaped parafoveal elevation in OD fig. 1a end. Similar small macular lesions were also noted in OS. Fluorescein angiography showed multiple areas of early hyperfluorescence and late leakage in OD fig. 1b c end. Similar but less pronounced angiography findings were seen in OS fig. 1d end. Optical coherence tomography OCT revealed RPE detachment elevation of the neurosensory retina and highly reflective subretinal fluid mostly in OD fig. 1e.The diagnosis of multifocal CSCR was made. As the patients myasthenia could not be optimally controlled at the time the treating neurologist advised against prednisolone discontinuation. Unfortunately we noticed further deterioration of the BCVA and subfoveal expansion of the subretinal fluid in OD so it was decided to administer an intravitreal injection of ranibizumab in this eye. One month later his BCVA had deteriorated to 3/10 in OD and 7/10 in OS.\n",
+        "relations": [
+            {
+                "head": "myasthenia gravis",
+                "head_label": "disease",
+                "relation": "treatment",
+                "tail": "oral prednisolone",
+                "tail_label": "medication"
+            },
+            {
+                "head": "myasthenia gravis",
+                "head_label": "disease",
+                "relation": "treatment",
+                "tail": "azathioprine",
+                "tail_label": "medication"
+            },
+            {
+                "head": "visual acuity",
+                "head_label": "clinical feature",
+                "relation": "be superior to",
+                "tail": "8/10",
+                "tail_label": ""
+            },
+            {
+                "head": "visual acuity",
+                "head_label": "clinical feature",
+                "relation": "be superior to",
+                "tail": "9/10",
+                "tail_label": ""
+            },
+            {
+                "head": "Fundoscopy",
+                "head_label": "clinical feature",
+                "relation": "reveal",
+                "tail": "small yellow-whitish circumscribed macular elevations",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Fundoscopy",
+                "head_label": "clinical feature",
+                "relation": "reveal",
+                "tail": "larger irregularly shaped parafoveal elevation",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Fluorescein angiography",
+                "head_label": "clinical feature",
+                "relation": "show",
+                "tail": "early hyperfluorescence",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Fluorescein angiography",
+                "head_label": "clinical feature",
+                "relation": "show",
+                "tail": "late leakage",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Optical coherence tomography",
+                "head_label": "clinical feature",
+                "relation": "reveal",
+                "tail": "RPE detachment",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Optical coherence tomography",
+                "head_label": "clinical feature",
+                "relation": "reveal",
+                "tail": "elevation of the neurosensory retina",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Optical coherence tomography",
+                "head_label": "clinical feature",
+                "relation": "reveal",
+                "tail": "highly reflective subretinal fluid",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "multifocal CSCR",
+                "head_label": "disease",
+                "relation": "diagnosis",
+                "tail": "made",
+                "tail_label": ""
+            },
+            {
+                "head": "neurologist",
+                "head_label": "clinical feature",
+                "relation": "advise against",
+                "tail": "prednisolone discontinuation",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "BCVA",
+                "head_label": "clinical feature",
+                "relation": "deteriorate",
+                "tail": "3/10",
+                "tail_label": ""
+            },
+            {
+                "head": "BCVA",
+                "head_label": "clinical feature",
+                "relation": "deteriorate",
+                "tail": "7/10",
+                "tail_label": ""
+            },
+            {
+                "head": "subretinal fluid",
+                "head_label": "clinical feature",
+                "relation": "expand",
+                "tail": "subfoveal",
+                "tail_label": ""
+            },
+            {
+                "head": "intravitreal injection",
+                "head_label": "clinical feature",
+                "relation": "administer",
+                "tail": "ranibizumab",
+                "tail_label": "medication"
+            }
+        ]
+    },
+    {
+        "paragraph": "OCT demonstrated further elevation of the neurosensory retina and a more irregular subretinal accumulation of highly reflective material fig. 2 end. Indocyanine green angiography excluded neovascularization and polyp-like vascular abnormalities. Low-fluence photodynamic therapy PDT was performed. We administered verteporfin i.v. at a dose of 6 mg/m2 over 10 min waited for 5 min and then directed the diode laser at the larger lesion of leakage in OD using a wavelength of 689 nm and laser energy of 25 mJ/cm2. After the first application the laser spot was directed at the second and the third lesion of leakage in OD fig. 3a end. As the patients myasthenic symptoms improved it became possible for the attending neurologist to reduce the dose of prednisolone increase the dose of azathioprine and add neostigmine. One month later and while undergoing prednisolone tapering his BCVA in OD had improved to 6/10 with no subretinal fluid while the area with the fibrin deposition had nearly disappeared fig. 3b end. The BCVA in OS improved to 10/10 over the next couple of months. To date 1 year after treatment the patients BCVA remains stable at 6/10 in OD and 10/10 in OS with no signs of active disease. The patients myasthenia is currently well controlled with azathioprine and neostigmine.\n",
+        "relations": [
+            {
+                "head": "OCT",
+                "head_label": "clinical feature",
+                "relation": "demonstrated",
+                "tail": "elevation of the neurosensory retina",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "OCT",
+                "head_label": "clinical feature",
+                "relation": "demonstrated",
+                "tail": "irregular subretinal accumulation of highly reflective material",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "OCT",
+                "head_label": "clinical feature",
+                "relation": "demonstrated",
+                "tail": "elevation of the neurosensory retina",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "OCT",
+                "head_label": "clinical feature",
+                "relation": "demonstrated",
+                "tail": "irregular subretinal accumulation of highly reflective material",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Indocyanine green angiography",
+                "head_label": "clinical feature",
+                "relation": "excluded",
+                "tail": "neovascularization",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Indocyanine green angiography",
+                "head_label": "clinical feature",
+                "relation": "excluded",
+                "tail": "polyp-like vascular abnormalities",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "PDT",
+                "head_label": "clinical feature",
+                "relation": "performed",
+                "tail": "Low-fluence photodynamic therapy",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "verteporfin",
+                "head_label": "medication",
+                "relation": "administered",
+                "tail": "PDT",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "verteporfin",
+                "head_label": "medication",
+                "relation": "administered",
+                "tail": "at a dose of 6 mg/m2 over 10 min",
+                "tail_label": ""
+            },
+            {
+                "head": "verteporfin",
+                "head_label": "medication",
+                "relation": "administered",
+                "tail": "waited for 5 min",
+                "tail_label": ""
+            },
+            {
+                "head": "verteporfin",
+                "head_label": "medication",
+                "relation": "administered",
+                "tail": "directed the diode laser at the larger lesion of leakage in OD",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "verteporfin",
+                "head_label": "medication",
+                "relation": "administered",
+                "tail": "using a wavelength of 689 nm",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "verteporfin",
+                "head_label": "medication",
+                "relation": "administered",
+                "tail": "using laser energy of 25 mJ/cm2",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "laser spot",
+                "head_label": "medication",
+                "relation": "directed at",
+                "tail": "the second and the third lesion of leakage in OD",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "myasthenic symptoms",
+                "head_label": "symptom",
+                "relation": "improved",
+                "tail": "patients",
+                "tail_label": ""
+            },
+            {
+                "head": "neurologist",
+                "head_label": "clinical feature",
+                "relation": "reduced the dose of",
+                "tail": "prednisolone",
+                "tail_label": "medication"
+            },
+            {
+                "head": "neurologist",
+                "head_label": "clinical feature",
+                "relation": "increased the dose of",
+                "tail": "azathioprine",
+                "tail_label": "medication"
+            },
+            {
+                "head": "neurologist",
+                "head_label": "clinical feature",
+                "relation": "added",
+                "tail": "neostigmine",
+                "tail_label": "medication"
+            },
+            {
+                "head": "BCVA in OD",
+                "head_label": "clinical feature",
+                "relation": "improved to",
+                "tail": "6/10",
+                "tail_label": ""
+            },
+            {
+                "head": "BCVA in OD",
+                "head_label": "clinical feature",
+                "relation": "improved to",
+                "tail": "with no subretinal fluid",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "area with the fibrin deposition",
+                "head_label": "clinical feature",
+                "relation": "nearly disappeared",
+                "tail": "fig. 3b",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "BCVA in OS",
+                "head_label": "clinical feature",
+                "relation": "improved to",
+                "tail": "10/10",
+                "tail_label": ""
+            },
+            {
+                "head": "patients",
+                "head_label": "clinical feature",
+                "relation": "BCVA remains stable at",
+                "tail": "6/10 in OD",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "patients",
+                "head_label": "clinical feature",
+                "relation": "BCVA remains stable at",
+                "tail": "10/10 in OS",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "patients",
+                "head_label": "clinical feature",
+                "relation": "no signs of",
+                "tail": "active disease",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "patients",
+                "head_label": "clinical feature",
+                "relation": "myasthenia is currently well controlled with",
+                "tail": "azathioprine and neostigmine",
+                "tail_label": "medication"
+            }
+        ]
+    }
+]
