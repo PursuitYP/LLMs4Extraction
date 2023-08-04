@@ -363,9 +363,10 @@ if __name__ == "__main__":
     # write_csv_file = "../../projects/openie6/rel_results/rel_abs_pubmed_selected_clinical_new.csv"
     # input_rel_file = "../../projects/openie6/rel_results/rel_abs_1_10001.txt"
     # write_csv_file = "../../projects/openie6/rel_results/rel_abs_1_10001_new.csv"
-    input_rel_file = "../../projects/openie6/rel_results/rel_abs_90001_100001.txt"
-    write_csv_file = "../../projects/openie6/rel_results/rel_abs_90001_100001_new.csv"
-    print(f"input_rel_file: {input_rel_file}")
+    # input_rel_file = "../../projects/openie6/rel_results/rel_abs_90001_100001.txt"
+    # write_csv_file = "../../projects/openie6/rel_results/rel_abs_90001_100001_new.csv"
+    input_rel_file = "../../projects/openie6/rel_results/rel_display.txt"
+    write_csv_file = "../../projects/openie6/rel_results/rel_display_new.csv"
     print(f"write_csv_file: {write_csv_file}")
     print("-" * 100)
     log_file = 'log_mgkg.txt'

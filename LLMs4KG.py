@@ -1,240 +1,274 @@
-""" 沉积岩 @何忠谋 """
-head = "head entity"
-tail = "tail entity"
-prompts = f'please tell me the relationship between {head} and {tail}, choose from RelatedTo,FormOf,IsA,PartOf,HasA,UsedFor,CapableOf,AtLocation,Causes,HasSubevent,HasFirstSubevent,HasLastSubevent,HasPrerequisite,HasProperty,MotivatedByGoal,ObstructedBy,Desires,CreatedBy,Synonym,Antonym,DistinctFrom,DerivedFrom,SymbolOf,DefinedAs,MannerOf,LocatedNear,HasContext,SimilarTo,EtymologicallyRelatedTo,EtymologicallyDerivedFrom,CausesDesire,MadeOf,ReceivesAction,ExternalURL'
-
-
-from revChatGPT.V3 import Chatbot
+import os
+import openai
 import json
+import re
+import tiktoken
+import pandas as pd
+from dotenv import load_dotenv
+from revChatGPT.V3 import Chatbot
+from PyPDF2 import PdfReader
+from tqdm import tqdm
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def ChatGPT_extract_entity_and_relation(paragraph: str):
-    chatbot = Chatbot(api_key=API_KEY)
+
+load_dotenv()
+os.environ["http_proxy"] = "http://10.10.1.3:10000"
+os.environ["https_proxy"] = "http://10.10.1.3:10000"
+openai.api_key = os.getenv("OPENAI_API_KEY")
+os.environ['OPENAI_API_KEY'] = openai.api_key
+
+
+def remove_chinese(text):
+    pattern = re.compile(r'[\u4e00-\u9fa5] ')  # 匹配中文字符的正则表达式
+    text = re.sub(pattern, '', text)
+    pattern = re.compile(r'[\u4e00-\u9fa5]')  # 匹配中文字符的正则表达式
+    return re.sub(pattern, '', text)
+
+
+# 从schema文件中获取本体（ontology - entity_label）
+def get_entity_labels():
+    entity_labels = []
+
+    # 读取excel工作表6.1.xlsx - ontology
+    df = pd.read_excel('./data/KGConstruction/6.1.xlsx', sheet_name='Sheet1')
+    # 按行迭代数据
+    for index, row in df.iterrows():
+        # 读取行中的每个单元格
+        entity_label = row['节点1']
+        entity_labels.append(entity_label)
+        entity_label = row['节点2']
+        entity_labels.append(entity_label)
     
+    entity_labels = list(set(entity_labels))
+    entity_labels = [remove_chinese(entity_label) for entity_label in entity_labels]
+
+    return entity_labels
+
+
+# 从schema文件中获取关系（relation）
+def get_relations():
+    relations = []
+
+    # 读取excel工作表6.1.xlsx - relations
+    df = pd.read_excel('./data/KGConstruction/6.1.xlsx', sheet_name='Sheet1')
+    # 按行迭代数据
+    for index, row in df.iterrows():
+        # 读取行中的每个单元格
+        relation_name = row['边']
+        relations.append(relation_name)
+    
+    relations = list(set(relations))
+    relations = [remove_chinese(relation) for relation in relations]
+
+    return relations
+
+
+entity_labels = get_entity_labels()
+schema_relations = get_relations()
+
+
+# 使用PdfReader读取pdf文献，手动加入Page Number信息
+def read_pdf(filepath):
+    """Takes a filepath to a PDF and returns a string of the PDF's contents"""
+    # creating a pdf reader object
+    reader = PdfReader(filepath)
+    pdf_text = ""
+    page_number = 0
+    for page in reader.pages:
+        page_number += 1
+        pdf_text += page.extract_text() + f"\nPage Number: {page_number}"
+    return pdf_text
+
+
+# Split a text into smaller chunks of size n, preferably ending at the end of a sentence
+def create_chunks(text, n, tokenizer):
+    tokens = tokenizer.encode(text)
+    """Yield successive n-sized chunks from text."""
+    i = 0
+    while i < len(tokens):
+        # Find the nearest end of sentence within a range of 0.5 * n and 1.5 * n tokens
+        j = min(i + int(1.5 * n), len(tokens))
+        while j > i + int(0.5 * n):
+            # Decode the tokens and check for full stop or newline
+            chunk = tokenizer.decode(tokens[i:j])
+            if chunk.endswith(".") or chunk.endswith("\n"):
+                break
+            j -= 1
+        # If no end of sentence found, use n tokens as the chunk size
+        if j == i + int(0.5 * n):
+            j = min(i + n, len(tokens))
+        yield tokens[i:j]
+        i = j
+
+
+def triple_extraction(paragraph: str, entity_labels: list, schema_relations: list):
     system_prompt = "I want you to act as a entity and relation extractor to help me build an academic knowledge graph from several paragraphs."
-    chatbot.ask(system_prompt)
+    chatbot = Chatbot(api_key=openai.api_key, system_prompt=system_prompt)
     
     prompt1 = f"""
 I will give you a paragraph. Extract as many named entities as possible from it. Your answer should only contain a list and nothing else. Here is an example:
-
-paragraph: Scientists conducted depth first search into borealis and found that the formation of Magnolite is obstructed by solar cycle.
+---
+paragraph: 
+This type of bone concentration, also present in Rincon de los Sauces (northern Patagonia), suggests that overbank facies tended to accumulate large titanosaur bones.
 
 your answer: 
 [
-"depth first search",
-"borealis",
-"Magnolite",
-"solar cycle",
+"bone concentration",
+"northern Patagonia",
+"overbank facies",
+"large titanosaur bones"
 ]
-
+---
 Here is the paragraph you should process:
 {paragraph}
 """
+
     entity_list = chatbot.ask(prompt1)
-    print(entity_list)
+    # print(entity_list)
     
-    prompt2 = "This is the entity list you have just generated." + str(entity_list) + """
+    prompt2 = "This is the entity list you have just generated: " + str(entity_list) + f"""
 
 Classify every entity in into one of the categories in the following list. You should not classify any entity into a category that in not in the following list.
 
-[human, humanAgriculture, humanCommerce, humanDecision, humanEnvirAssessment, humanEnvirConservation, humanEnvirControl, humanEnvirStandards, humanJurisdiction, humanKnowledgeDomain, humanResearch, humanTechReadiness, humanTransportation, matr, matrAerosol, matrAnimal, matrBiomass, matrElement, matrElementalMolecule, matrEnergy, matrEquipment, matrFacility, matrIndustrial, matrInstrument, matrIon, matrIsotope, matrMicrobiota, matrMineral, matrNaturalResource, matrOrganicCompound, matrParticle, matrPlant, matrRock, matrRockIgneous, matrSediment, matrWater, phen, phenAtmo, phenAtmoCloud, phenAtmoFog, phenAtmoFront, phenAtmoLightning, phenAtmoPrecipitation, phenAtmoPressure, phenAtmoTransport, phenAtmoWind, phenAtmoWindMesoscale, phenBiol, phenCryo, phenCycle, phenCycleMaterial, phenEcology, phenElecMag, phenEnergy, phenEnvirImpact, phenFluidDynamics, phenFluidInstability, phenFluidTransport, phenGeol, phenGeolFault, phenGeolGeomorphology, phenGeolSeismicity, phenGeolTectonic, phenGeolVolcano, phenHelio, phenHydro, phenMixing, phenOcean, phenOceanCoastal, phenOceanDynamics, phenPlanetClimate, phenReaction, phenSolid, phenStar, phenSystem, phenSystemComplexity, phenWave, phenWaveNoise, proc, procChemical, procPhysical, procStateChange, procWave, prop, propBinary, propCapacity, propCategorical, propCharge, propChemical, propConductivity, propCount, propDifference, propDiffusivity, propDimensionlessRatio, propEnergy, propEnergyFlux, propFraction, propFunction, propIndex, propMass, propMassFlux, propOrdinal, propPressure, propQuantity, propRotation, propSpace, propSpaceDirection, propSpaceDistance, propSpaceHeight, propSpaceLocation, propSpaceMultidimensional, propSpaceThickness, propSpeed, propTemperature, propTemperatureGradient, propTime, propTimeFrequency, realm, realmAstroBody, realmAstroHelio, realmAstroStar, realmAtmo, realmAtmoBoundaryLayer, realmAtmoWeather, realmBiolBiome, realmClimateZone, realmCryo, realmEarthReference, realmGeol, realmGeolBasin, realmGeolConstituent, realmGeolContinental, realmGeolOrogen, realmHydro, realmHydroBody, realmLandAeolian, realmLandCoastal, realmLandFluvial, realmLandGlacial, realmLandOrographic, realmLandProtected, realmLandTectonic, realmLandVolcanic, realmLandform, realmOcean, realmOceanFeature, realmOceanFloor, realmRegion, realmSoil, rela, relaChemical, relaClimate, relaHuman, relaMath, relaPhysical, relaProvenance, relaSci, relaSpace, relaTime, repr, reprDataFormat, reprDataModel, reprDataProduct, reprDataService, reprDataServiceAnalysis, reprDataServiceGeospatial, reprDataServiceReduction, reprDataServiceValidation, reprMath, reprMathFunction, reprMathFunctionOrthogonal, reprMathGraph, reprMathOperation, reprMathSolution, reprMathStatistics, reprSciComponent, reprSciFunction, reprSciLaw, reprSciMethodology, reprSciModel, reprSciProvenance, reprSciUnits, reprSpace, reprSpaceCoordinate, reprSpaceDirection, reprSpaceGeometry, reprSpaceGeometry3D, reprSpaceReferenceSystem, reprTime, reprTimeDay, reprTimeSeason, state, stateBiological, stateChemical, stateDataProcessing, stateEnergyFlux, stateFluid, stateOrdinal, statePhysical, stateRealm, stateRole, stateRoleBiological, stateRoleChemical, stateRoleGeographic, stateRoleImpact, stateRoleRepresentative, stateRoleTrust, stateSolid, stateSpace, stateSpaceConfiguration, stateSpaceScale, stateSpectralBand, stateSpectralLine, stateStorm, stateSystem, stateThermodynamic, stateTime, stateTimeCycle, stateTimeFrequency, stateTimeGeologic, stateVisibility, sweet_v23Comments]
+{entity_labels}
 
 Your result should be a JSON dictionary with entities being the keys and categories being the values. There should be nothing in your answer except the JSON dictionary.
-
+---
 Here is an example:
 
 entity list:
 [
-"depth first search",
-"borealis",
-"Magnolite",
-"solar cycle",
+"bone concentration",
+"northern Patagonia",
+"overbank facies",
+"large titanosaur bones"
 ]
 your answer:
-{
-"depth first search": "reprMathSolution",
-"borealis": "realmRegion",
-"Magnolite": "matrMineral",
-"solar cycle": "phenCycle",
-}
+{{
+"bone concentration": "Paleontology",
+"northern Patagonia": "Location",
+"overbank facies": "Flood plain/Overbank",
+"large titanosaur bones": "Large scale lateral accretion structure"
+}}
 """
+
     entity_category_dict = chatbot.ask(prompt2)
-    print(entity_category_dict)
+    # print(entity_category_dict)
     
     prompt3 = f"""
 The following is the paragraph:
 
 {paragraph}
 
-The following is the entity list you have just generated
+The following is the entity list you have just generated:
 
 {entity_list}
 
-Extract as many relations as possible from the paragraph. Your result should be a list of triples and nothing else. The first and third element in each triple should be in the entity list you have generated and the second element should be in the following relation category list. You should not extract any relation that is not in the following list. The relation you choose should be precise and diverse. You shouldn't use "RelatedTo" to describe all the relations.
+Extract as many relations as possible from the paragraph. Your result should be a list of triples and nothing else. The first and third element in each triple should be in the entity list you have generated and the second element should be in the following relation category list. You should not extract any relation that is not in the following list. The relation you choose should be precise and diverse. You shouldn't use "Includes" to describe all the relations.
 
-[RelatedTo, FormOf, IsA, PartOf, HasA, UsedFor, CapableOf, AtLocation, Causes, HasSubevent, HasFirstSubevent, HasLastSubevent, HasPrerequisite, HasProperty, MotivatedByGoal, ObstructedBy, Desires, CreatedBy, Synonym, Antonym, DistinctFrom, DerivedFrom, SymbolOf, DefinedAs, MannerOf, LocatedNear, HasContext, SimilarTo, EtymologicallyRelatedTo, EtymologicallyDerivedFrom, CausesDesire, MadeOf, ReceivesAction, ExternalURL]
-
-Here is an example.
+{schema_relations}
+---
+Here is an example:
 
 paragraph: 
-Scientists conducted depth first search into borealis and found that the formation of Magnolite is obstructed by solar cycle.
+This type of bone concentration, also present in Rincon de los Sauces (northern Patagonia), suggests that overbank facies tended to accumulate large titanosaur bones.
 
 entity list:
 [
-    "depth first search",
-    "borealis",
-    "Magnolite",
-    "solar cycle",
+    "bone concentration",
+    "northern Patagonia",
+    "overbank facies",
+    "large titanosaur bones"
 ]
 
 your answer:
 
 [
-    ["depth first search","UsedFor","borealis"],
-    ["Magnolite","ObstructedBy","solar cycle"],
+    ["bone concentration","Located","northern Patagonia"],
+    ["overbank facies","accumulate","large titanosaur bones"],
 ]
 
 """
+
     relation_list = chatbot.ask(prompt3)
-    print(relation_list)
+    # print(relation_list)
     
     try:
     
         p_entity_list = json.loads(entity_list)
         p_entity_category_dict = json.loads(entity_category_dict)
         p_relation_list = json.loads(relation_list)
-        
-        return [
-            p_entity_list, 
-            p_entity_category_dict,
-            p_relation_list
-            ]
+        print("# JSON load successful!")
+        # return [
+            # p_entity_list, 
+            # p_entity_category_dict, 
+            # p_relation_list
+            # ]
+        return {
+            "entity_list": p_entity_list,
+            "entity_category_dict": p_entity_category_dict,
+            "relation_list": p_relation_list
+        }
     except:
-        return (entity_list, entity_category_dict, relation_list)
+        print("# JSON load failed!")
+        # return (entity_list, entity_category_dict, relation_list)
+        return {
+            "entity_list": entity_list,
+            "entity_category_dict": entity_category_dict,
+            "relation_list": relation_list
+        }
 
 
+paragraph1 = "Eight distinct facies have been defined in a 110-m thick section of the Lower Devonian Battery Point Sandstone near Gaspe, Quebec. The first is a scoured surface overlain by massive sandstone with mudstone intraclasts. Facies A and B are trough cross-bedded sandstones, with poorly-and well-defined stratification, respectively. Facies C and D consist of large isolated, and smaller multiple, sets of planar cross-stratified sandstones, respectively. Facies E comprises large sandstone-filled scours, facies F comprises ripple cross stratified fine sandstones with interbedded mudstones, and facies G comprises sets of very low angle cross-stratified sandstones. The overall context of the Battery Point Sandstone, the presence of rootlets, and the abundance of trough and planar-tabular cross bedding, all suggest a generally fluvial environment of deposition. Analysis of the facies sequence and interpretation of the primary sedimentary structures suggest that channel development began by scouring, and deposition of an intraclast lag. Above this, the two trough cross bedded facies indicate unidirectional dune migration downchannel (vector mean direction 291). The large planar tabular sets are associated with the trough cross bedded facies, but always show a large (almost 90) paleoflow divergence, suggesting lateral movement of in-channel transverse bars. The smaller planar tabular sets occur higher topographically in the fluvial system, and the rippled silts and muds indicate vertical accretion. Because of the very high ratio of in-channel sandy facies to fine-grained vertical accretion facies, and because of the evidence of lateral migration of large in-channel bars, the Battery Point River appears to resemble modern braided systems more than meandering ones."
+paragraph2 = "Patagonia exhibits a particularly abundant record of Cretaceous dinosaurs with worldwide relevance. Although paleontological studies are relatively numerous, few include taphonomic information about these faunas. This contribution provides the first detailed sedimentological and taphonomical analyses of a dinosaur bone quarry from northern Neuquén Basin. At Arroyo Seco (Mendoza Province, Argentina), a large parautochthonous/autochthonous accumulation of articulated and disarticulated bones that represent several sauropod individuals has been discovered. The fossil remains, assigned to Mendozasaurus neguyelap González Riga, correspond to a large (18-27-m long) sauropod titanosaur collected in the strata of the Río Neuquén Subgroup (late Turoronian-late Coniacian). A taphonomic viewpoint recognizes a two-fold division into biostratinomic and fossil-diagenetic processes. Biostratinomic processes include (1) subaerial biodegradation of sauropod carcasses on well-drained floodplains, (2) partial or total skeletal disarticulation, (3) reorientation of bones by sporadic overbank flows, and (4) subaerial weathering. Fossil-diagenetic processes include (1) plastic deformation of bones, (2) initial permineralization with hematite, (3) fracturing and brittle deformation due to lithostatic pressure; (4) secondary permineralization with calcite in vascular canals and fractures, and (5) postfossilization bone weathering. This type of bone concentration, also present in Rincó n de los Sauces (northern Patagonia), suggests that overbank facies tended to accumulate large titanosaur bones. This taphonomic mode, referred to as ''overbank bone assemblages'', outlines the potential of crevasse splay facies as important sources of paleontological data in Cretaceous meandering fluvial systems."
+
+entity_labels = ['Location', 'Scour surface', 'Filling structure', 'Imbricate structure', 'Thicker than the bank deposit', 'Caliche nodule', 'Approximate the depth of the riverbed', 'Freshwater lake life', 'alluvial plain', 'Fine silt and clay', 'Arcose', 'Corundum', 'Suspended load', 'General > 90°', 'Mature stage', 'Braided index (B)', 'S<1.3, B>0', 'Horizontally-laminated bed', 'Fine sandstone', 'Back swamp', 'S>2.0, B≈0', 'Natural levee', 'River flood lake', 'Large and medium water bedding', 'Old stage/Senility', 'Fluvial Facies', 'General > 2 m', 'Peat layer', 'Platinum', 'Sinuosity index (S)', 'levee', 'The thickness is not big, from ten centimeters to several meters', 'Plant roots', 'Horizontal lamination', 'Small sand grain bedding', 'Flood plain/Overbank', 'Tungsten', 'Large scale lateral accretion structure', 'Mudstone', 'Mud crack/Desiccation crack', 'Small sand lamination', 'Uranium', 'Lenticle', 'Serpentine River', '2.0>S>1.3', 'Scour structure', 'High-sinuosity river', 'Oblique bedding', '≈30m-50km', 'Sand body', 'Monazite', 'Intermittent sand grain bedding (oblique wave bedding)', 'oxbow lakes', 'Overlying sand grain bedding', 'Siltstone', 'Slabby', 'Lithic sandstone', 'Point bar', 'Gravel', 'Minerals', 'Tin', 'Low-sinuosity river', 'Graded bedding', 'Lithology', 'Distributary', 'Lag conglomerate', 'Small fan deposits', 'Wandering river/Braided river', 'Copper', 'Wormtrail', 'Small cross-bedding', 'Paleontology', 'Straight river', 'Depends on the size of the river', 'Flood fan', 'Young stage/Infancy', 'abandoned channels', 'Embankment', 'Crystal', 'Sand', 'Braided river', 'Worm boring', 'Adamas', 'Oxbow lake', 'Gravel', 'River channel', 'terraces', 'active channels', 'Horizontal bedding', 'Crosslamination', 'Breccia structure', 'Meandering river/Meandering stream', 'Sedimentary structure', 'Gold', 'Medium cross-bedding', 'Argillaceous rock', 'flood plain', 'Plant trunk']
+schema_relations = ['Located', 'Thickness', 'Shape', 'Granularity', 'With', 'Width', 'Including', 'Classification', 'Dispersion of tendencies', 'Layer thickness', 'Visible', 'Identification marker', 'Sometimes can appear', 'includes', 'Always have', 'Standard', 'Exposure marker']
+print(entity_labels)
+print(schema_relations)
+print("-" * 80)
 
 
+# 抽取张蕾师姐的No.1和No.2两篇论文的摘要
+result = triple_extraction(paragraph1, entity_labels, schema_relations)
+print(result)
+print(type(result))
+print(json.dumps(result, indent=4))
+with open('results/zl_no1.json', 'w', newline='\n') as file:
+    json.dump(result, file, indent=4)
+print("-" * 80)
 
-""" 海洋组 @狄子钧 """
-prompt = '''please describe the relationship between "{ Ontology[1] }" and "{ Ontology[2] }" using just one word, which is choosed from { Relations }.'''
-
-from getchat import get_chat
-from itertools import combinations
-import pandas as pd
-from pandas import ExcelWriter
-import openpyxl
-
-head = []
-tail = []
-relation = []
-
-Entities = pd.read_excel("Physical_Conception.xlsx")
-entity_comb = combinations(Entities.iloc[:, 0].tolist(), 2)
-for entity in entity_comb:
-    input_content = f'''please tell me the relationship between "{entity[0]}" and "{entity[1]}" using just one word, 
-                    which is choosed from RelatedTo, FormOf, IsA, PartOf, HasA, UsedFor, CapableOf, AtLocation, 
-                    Causes, HasSubevent, HasFirstSubevent, HasLastSubevent, HasPrerequisite, HasProperty, 
-                    MotivatedByGoal, ObstructedBy, Desires, CreatedBy, Synonym, Antonym, DistinctFrom, DerivedFrom, 
-                    SymbolOf, DefinedAs, MannerOf, LocatedNear, HasContext, SimilarTo, EtymologicallyRelatedTo, 
-                    EtymologicallyDerivedFrom, CausesDesire, MadeOf, ReceivesAction, ExternalURL.'''
-    response = get_chat(input_content)['choices'][0]['message']['content']
-    print(response)
-    head.append(entity[0])
-    tail.append(entity[1])
-    relation.append(response)
-
-save_csv = pd.DataFrame({'Head entity': head, "Relation": relation, "Tail entity": tail})
-with ExcelWriter("Result/part1/part_result.xlsx") as writer:
-    save_csv.to_excel(writer, index=False, engine=openpyxl)
+# result = triple_extraction(paragraph2, entity_labels, schema_relations)
+# print(result)
+# print(type(result))
+# print(json.dumps(result, indent=4))
+# with open('results/zl_no2.json', 'w', newline='\n') as file:
+#     json.dump(result, file, indent=4)
 
 
-
-prompt = '''After reading the { Titles } these 10 papers, please describe the relationship between "{ Ontology[1] }" and "{ Ontology[2] }" using just one word, which is choosed from { Relations }.''' 
-
-# ToDo：在数据库中检索每个关键词的top10文章，chat_gpt阅读文献后，“give me the relation of entity[0] and entity[1]”
-
-import elasticsearch
-import pandas as pd
-from pandas import ExcelWriter
-import openpyxl
-from getchat import get_chat
-from itertools import combinations
-import numpy as np
-
-
-def get_query(entities):
-    index = "gakg_document"
-    query_json = {"query": {
-                        "bool": {
-                            "must": [],
-                            "filter": [
-                                {
-                                    "bool": {
-                                        "filter": [
-                                            {"multi_match": {
-                                                    "type": "best_fields",
-                                                    "query": "{}".format(entities[0]),
-                                                }
-                                            },
-                                            {"multi_match": {
-                                                    "type": "best_fields",
-                                                    "query": "{}".format(entities[1]),
-                                                }}]}}], }}}
-    query = es.search(index=index, body=query_json)
-    return query["hits"]["hits"]
-
-
-# ToDo：提供给chat_gpt十篇文献标题后，查看head和tail的relation
-prompt_1 = '''After reading {} these 10 papers, '''
-prompt_2 = '''please describe the relationship between "{}" and "{}" using just one word, '''
-prompt_3 = '''which is choosed from RelatedTo, FormOf, IsA, PartOf, HasA, UsedFor, CapableOf, AtLocation, 
-                Causes, HasSubevent, HasFirstSubevent, HasLastSubevent, HasPrerequisite, HasProperty, 
-                MotivatedByGoal, ObstructedBy, Desires, CreatedBy, Synonym, Antonym, DistinctFrom, DerivedFrom, 
-                SymbolOf, DefinedAs, MannerOf, LocatedNear, HasContext, SimilarTo, EtymologicallyRelatedTo, 
-                EtymologicallyDerivedFrom, CausesDesire, MadeOf, ReceivesAction, ExternalURL.'''
-
-head = []
-tail = []
-relation = []
-save_csv_path = "Result/part2/Database Extraction.xlsx"
-writer1 = ExcelWriter(save_csv_path, engine='openpyxl')
-save_relation_path = "Result/part2/part2_result.xlsx"
-writer2 = ExcelWriter(save_relation_path, engine='openpyxl')
-
-Entities = pd.read_excel("Physical_Conception.xlsx", header=None, usecols=[0])
-entity_comb = combinations(Entities.iloc[:, 0].tolist(), 2)
-for num, entity in enumerate(entity_comb):
-    content = []
-    title = []
-    abstract = []
-    url = []
-    titles = ""
-    for paper in get_query(entity):
-        content.append(paper['_source']['content'])
-        title.append(paper['_source']['name'])
-        abstract.append(paper['_source']['abstract'])
-        url.append(paper['_source']['url'])
-        titles += paper['_source']['name']
-
-    save_csv = pd.DataFrame({'Title': title, "Abstract": abstract, "Content": content, "url": url})
-    insert_column = [", ".join(entity), "", "", ""]
-    save_csv = pd.DataFrame(np.insert(save_csv.values, 0, values=insert_column, axis=0))
-    save_csv.to_excel(writer1,
-                      sheet_name="sheet{}".format(num),
-                      index=False,
-                      engine=openpyxl)
-
-    input_content = prompt_1.format(titles) + prompt_2.format(entity[0], entity[1]) + prompt_3
-    response = get_chat(input_content)['choices'][0]['message']['content']
-    print(response)
-    head.append(entity[0])
-    tail.append(entity[1])
-    relation.append(response)
-
-    save_relation = pd.DataFrame({'Head entity': head, "Relation": relation, "Tail entity": tail})
-    save_relation.to_excel(writer2,
-                           index=False,
-                           engine=openpyxl)
-
-writer1.save()
-writer2.save()
+# 抽取王瀚老师的六篇碳酸盐岩论文
+# folder_path = "./data/KGConstruction/碳酸盐岩文献标定6篇/"
+# pdf_name = "Facies and climateenvironmental changes recorded on a carbonate ramp.pdf"
+# pdf_path = folder_path + pdf_name
+# pdf_text = read_pdf(pdf_path)
+# clean_text = pdf_text.replace("  ", " ").replace("\n", "; ").replace(';',' ')
+# tokenizer = tiktoken.get_encoding("cl100k_base")
+# chunks = create_chunks(clean_text, 1000, tokenizer)
+# text_chunks = [tokenizer.decode(chunk) for chunk in chunks]
+# results = []
+# # 限制同时执行的线程数为8，缓解APIConnectionError（rate_limit_exceeded）报错
+# with ThreadPoolExecutor(max_workers=8) as executor:
+#     futures = {executor.submit(triple_extraction, chunk, entity_labels, schema_relations): chunk for chunk in text_chunks}
+#     for future in tqdm(as_completed(futures), total=len(futures), desc='Processing chunks'):
+#         # 收集完成的线程处理好的结果
+#         response = future.result()
+#         if response is None:
+#             pass
+#         else:
+#             # 汇总关键信息抽取的结果
+#             results.append(response)
+# wrt_path = pdf_name.replace(".pdf", ".json")
+# with open('results/' + wrt_path, 'w', newline='\n') as file:
+#     for result in results:
+#         json.dump(result, file, indent=4)
+#         file.write('\n')  # 添加换行符
