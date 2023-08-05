@@ -250,11 +250,21 @@ with open(result_single_write_file, "w", newline='\n') as wrt_single_file:
         # print(paragraph.strip())  # 输出每一行内容（去除换行符）
         result, load_flag = triple_extraction(paragraph, entity_labels, schema_relations)
 
-        # 待考证，可能会导致一直retry...
-        while not load_flag:    # JSON load失败，重试直到成功
-            print("# JSON load failed! Retry...")
-            result, load_flag = triple_extraction(paragraph, entity_labels, schema_relations)
+        # # 待考证，可能会导致一直retry...
+        # while not load_flag:    # JSON load失败，重试直到成功
+        #     print("# JSON load failed! Retry...")
+        #     result, load_flag = triple_extraction(paragraph, entity_labels, schema_relations)
 
+        # 折中方案：JSON load失败，重试
+        for i in range(5):
+            if not load_flag:
+                print("# JSON load failed! Retry...")
+                time.sleep(5)  # Wait before retrying
+                result, load_flag = triple_extraction(paragraph, entity_labels, schema_relations)
+            else:
+                break
+
+        ## 上面while方案改成if方案后，还是需要判断load_flag的
         # 其实这里可以不用判断load_flag，因为只有load_flag为True时，才会执行下面的语句
         if load_flag:   # JSON load成功
             success_cnt += 1
@@ -314,4 +324,4 @@ with open(result_write_file, "w") as json_file:
 # 将JSON load失败的paragraph一次性写入新文件
 with open(retry_write_file, 'w') as retry_file:
     for item in retry_paragraphs:
-        retry_file.write("%s\n" % item)
+        retry_file.write("%s" % item)
