@@ -12,16 +12,9 @@
             {
                 "head": "Multifocal Central Serous Chorioretinopathy",
                 "head_label": "disease",
-                "relation": "treatment",
-                "tail": "intravitreal injection of ranibizumab",
-                "tail_label": "medication"
-            },
-            {
-                "head": "Multifocal Central Serous Chorioretinopathy",
-                "head_label": "disease",
-                "relation": "treatment",
-                "tail": "low-fluence photodynamic therapy",
-                "tail_label": "non-medication treatment"
+                "relation": "associated with",
+                "tail": "Myasthenia Gravis",
+                "tail_label": "disease"
             },
             {
                 "head": "Steroids",
@@ -33,30 +26,30 @@
             {
                 "head": "Myasthenia Gravis",
                 "head_label": "disease",
-                "relation": "associated with",
-                "tail": "Steroids",
-                "tail_label": "medication"
+                "relation": "presented with",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
+                "tail_label": "disease"
             },
             {
                 "head": "Myasthenia Gravis",
                 "head_label": "disease",
-                "relation": "treatment",
-                "tail": "oral prednisolone",
+                "relation": "receiving",
+                "tail": "prednisolone",
                 "tail_label": "medication"
             },
             {
-                "head": "oral prednisolone",
+                "head": "prednisolone",
                 "head_label": "medication",
                 "relation": "treatment",
-                "tail": "Myasthenia Gravis",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
                 "tail_label": "disease"
             },
             {
                 "head": "corticosteroid",
                 "head_label": "medication",
-                "relation": "complication",
-                "tail": "Myasthenia Gravis",
-                "tail_label": "disease"
+                "relation": "contraindication",
+                "tail": "reducing the corticosteroid dose",
+                "tail_label": "medication"
             },
             {
                 "head": "intravitreal injection",
@@ -68,9 +61,9 @@
             {
                 "head": "ranibizumab",
                 "head_label": "medication",
-                "relation": "treatment",
-                "tail": "Multifocal Central Serous Chorioretinopathy",
-                "tail_label": "disease"
+                "relation": "combine with",
+                "tail": "low-fluence photodynamic therapy",
+                "tail_label": "non-medication treatment"
             },
             {
                 "head": "low-fluence photodynamic therapy",
@@ -92,6 +85,34 @@
                 "relation": "affected by",
                 "tail": "Multifocal Central Serous Chorioretinopathy",
                 "tail_label": "disease"
+            },
+            {
+                "head": "therapeutic approaches",
+                "head_label": "non-medication treatment",
+                "relation": "various",
+                "tail": "Multifocal Central Serous Chorioretinopathy",
+                "tail_label": "disease"
+            },
+            {
+                "head": "Eleni Vourda",
+                "head_label": "clinical feature",
+                "relation": "works at",
+                "tail": "University Eye Clinic of Ioannina",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "University Eye Clinic of Ioannina",
+                "head_label": "clinical feature",
+                "relation": "located at",
+                "tail": "Stavros Niarchos Ave, GR45500 Ioannina Greece",
+                "tail_label": "clinical feature"
+            },
+            {
+                "head": "Eleni Vourda",
+                "head_label": "clinical feature",
+                "relation": "contacted via",
+                "tail": "elvourdahotmail.com",
+                "tail_label": "clinical feature"
             }
         ]
     },
@@ -387,189 +408,6 @@
     },
     {
         "paragraph": "OCT demonstrated further elevation of the neurosensory retina and a more irregular subretinal accumulation of highly reflective material fig. 2 end. Indocyanine green angiography excluded neovascularization and polyp-like vascular abnormalities. Low-fluence photodynamic therapy PDT was performed. We administered verteporfin i.v. at a dose of 6 mg/m2 over 10 min waited for 5 min and then directed the diode laser at the larger lesion of leakage in OD using a wavelength of 689 nm and laser energy of 25 mJ/cm2. After the first application the laser spot was directed at the second and the third lesion of leakage in OD fig. 3a end. As the patients myasthenic symptoms improved it became possible for the attending neurologist to reduce the dose of prednisolone increase the dose of azathioprine and add neostigmine. One month later and while undergoing prednisolone tapering his BCVA in OD had improved to 6/10 with no subretinal fluid while the area with the fibrin deposition had nearly disappeared fig. 3b end. The BCVA in OS improved to 10/10 over the next couple of months. To date 1 year after treatment the patients BCVA remains stable at 6/10 in OD and 10/10 in OS with no signs of active disease. The patients myasthenia is currently well controlled with azathioprine and neostigmine.\n",
-        "relations": [
-            {
-                "head": "OCT",
-                "head_label": "clinical feature",
-                "relation": "demonstrated",
-                "tail": "elevation of the neurosensory retina",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "OCT",
-                "head_label": "clinical feature",
-                "relation": "demonstrated",
-                "tail": "irregular subretinal accumulation of highly reflective material",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "OCT",
-                "head_label": "clinical feature",
-                "relation": "demonstrated",
-                "tail": "elevation of the neurosensory retina",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "OCT",
-                "head_label": "clinical feature",
-                "relation": "demonstrated",
-                "tail": "irregular subretinal accumulation of highly reflective material",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "Indocyanine green angiography",
-                "head_label": "clinical feature",
-                "relation": "excluded",
-                "tail": "neovascularization",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "Indocyanine green angiography",
-                "head_label": "clinical feature",
-                "relation": "excluded",
-                "tail": "polyp-like vascular abnormalities",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "PDT",
-                "head_label": "clinical feature",
-                "relation": "performed",
-                "tail": "Low-fluence photodynamic therapy",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "verteporfin",
-                "head_label": "medication",
-                "relation": "administered",
-                "tail": "PDT",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "verteporfin",
-                "head_label": "medication",
-                "relation": "administered",
-                "tail": "at a dose of 6 mg/m2 over 10 min",
-                "tail_label": ""
-            },
-            {
-                "head": "verteporfin",
-                "head_label": "medication",
-                "relation": "administered",
-                "tail": "waited for 5 min",
-                "tail_label": ""
-            },
-            {
-                "head": "verteporfin",
-                "head_label": "medication",
-                "relation": "administered",
-                "tail": "directed the diode laser at the larger lesion of leakage in OD",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "verteporfin",
-                "head_label": "medication",
-                "relation": "administered",
-                "tail": "using a wavelength of 689 nm",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "verteporfin",
-                "head_label": "medication",
-                "relation": "administered",
-                "tail": "using laser energy of 25 mJ/cm2",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "laser spot",
-                "head_label": "medication",
-                "relation": "directed at",
-                "tail": "the second and the third lesion of leakage in OD",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "myasthenic symptoms",
-                "head_label": "symptom",
-                "relation": "improved",
-                "tail": "patients",
-                "tail_label": ""
-            },
-            {
-                "head": "neurologist",
-                "head_label": "clinical feature",
-                "relation": "reduced the dose of",
-                "tail": "prednisolone",
-                "tail_label": "medication"
-            },
-            {
-                "head": "neurologist",
-                "head_label": "clinical feature",
-                "relation": "increased the dose of",
-                "tail": "azathioprine",
-                "tail_label": "medication"
-            },
-            {
-                "head": "neurologist",
-                "head_label": "clinical feature",
-                "relation": "added",
-                "tail": "neostigmine",
-                "tail_label": "medication"
-            },
-            {
-                "head": "BCVA in OD",
-                "head_label": "clinical feature",
-                "relation": "improved to",
-                "tail": "6/10",
-                "tail_label": ""
-            },
-            {
-                "head": "BCVA in OD",
-                "head_label": "clinical feature",
-                "relation": "improved to",
-                "tail": "with no subretinal fluid",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "area with the fibrin deposition",
-                "head_label": "clinical feature",
-                "relation": "nearly disappeared",
-                "tail": "fig. 3b",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "BCVA in OS",
-                "head_label": "clinical feature",
-                "relation": "improved to",
-                "tail": "10/10",
-                "tail_label": ""
-            },
-            {
-                "head": "patients",
-                "head_label": "clinical feature",
-                "relation": "BCVA remains stable at",
-                "tail": "6/10 in OD",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "patients",
-                "head_label": "clinical feature",
-                "relation": "BCVA remains stable at",
-                "tail": "10/10 in OS",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "patients",
-                "head_label": "clinical feature",
-                "relation": "no signs of",
-                "tail": "active disease",
-                "tail_label": "clinical feature"
-            },
-            {
-                "head": "patients",
-                "head_label": "clinical feature",
-                "relation": "myasthenia is currently well controlled with",
-                "tail": "azathioprine and neostigmine",
-                "tail_label": "medication"
-            }
-        ]
+        "relations": "failure"
     }
 ]
