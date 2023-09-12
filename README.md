@@ -1,7 +1,7 @@
 # LLMs4Extraction
 utilize large language models for data extraction, such as relation triple extraction and attribute value extraction.
 
-## for quick start examples, go to the extract_main folder
+for quick start examples, go to the extract_main folder
 - 1_attribute_extraction.py
   - attribute-value extraction from pdf file or a paragraph.
 - 2_triple_extraction.py
