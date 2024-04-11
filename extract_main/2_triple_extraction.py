@@ -266,7 +266,7 @@ with open(result_single_write_file, "w", newline='\n') as wrt_single_file:
                 head = item[0]
                 relation = item[1]
                 tail = item[2]
-                head_lebal = ""
+                head_label = ""
                 tail_label = ""
                 # print(f'{head}, {relation}, {tail}')
                 entity_keys = entity_labels.keys()
